@@ -40,7 +40,8 @@ body, html {
   .overflow-block {
     width: 100vw;
     height: 100vh;
-    background-color: #3498db;
+    /* background-color: transparent; */
+    background-color: navy;
     margin-right: 20px;
   }
   
