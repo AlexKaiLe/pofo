@@ -1,19 +1,10 @@
-// VerticalNavbar.js
-import React, { useState } from 'react';
+import React from 'react';
 import './Navbar.css';
 import profileImg from './images/profile_grad.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFile } from '@fortawesome/free-solid-svg-icons';
 
 const VerticalNavbar = () => {
-    const [isHovered, setIsHovered] = useState(false);
-    const linkedinIconStyle = { color: '#ffffff' }; // Default color
-    const linkedinIconHoverStyle = { color: '#0077B5' }; // Hover color
-
-
-    // <p>Computer Science</p>
-    // <p>Molecular Biology</p>
-    // <p>Industrial Design</p>
     return (
         <div className="vertical-navbar">
             <div className="profile-container">
@@ -21,42 +12,26 @@ const VerticalNavbar = () => {
                 <img className="profile-image" src={profileImg} alt="Contact 1" />
                 <h1>Alexander Le</h1>
                 <div className="contact-buttons">
-                    <button className="contact-button">
-                        <FontAwesomeIcon
-                        icon={['fab', 'linkedin']}
-                        style={isHovered ? linkedinIconHoverStyle : linkedinIconStyle}
-                        fontSize='24px'
-                        className="linkedin-icon"
-                        onMouseEnter={() => setIsHovered(true)}
-                        onMouseLeave={() => setIsHovered(false)}/>
-                    </button>
-                    <button className="contact-button">
-                        <FontAwesomeIcon
-                        icon={['fab', 'github']}
-                        style={isHovered ? linkedinIconHoverStyle : linkedinIconStyle}
-                        fontSize='24px'
-                        className="linkedin-icon"
-                        onMouseEnter={() => setIsHovered(true)}
-                        onMouseLeave={() => setIsHovered(false)}/>
-                    </button>
-                    <button className="contact-button">
-                        <FontAwesomeIcon
-                        icon="envelope"
-                        style={isHovered ? linkedinIconHoverStyle : linkedinIconStyle}
-                        fontSize='24px'
-                        className="linkedin-icon"
-                        onMouseEnter={() => setIsHovered(true)}
-                        onMouseLeave={() => setIsHovered(false)}/>
-                    </button>
-                    <button className="contact-button">
-                        <FontAwesomeIcon
-                        icon={faFile}
-                        style={isHovered ? linkedinIconHoverStyle : linkedinIconStyle}
-                        fontSize='24px'
-                        className="linkedin-icon"
-                        onMouseEnter={() => setIsHovered(true)}
-                        onMouseLeave={() => setIsHovered(false)}/>
-                    </button>
+                    <a href="https://www.linkedin.com/in/alexkaile/">
+                        <button className="btn contact-button btn-outline-light">
+                            <FontAwesomeIcon icon={['fab', 'linkedin']} fontSize='1.25rem' style={{ padding: 0 }}/>
+                        </button>
+                    </a>
+                    <a href="https://github.com/AlexKaiLe">
+                        <button className="btn contact-button btn-outline-light">
+                            <FontAwesomeIcon icon={['fab', 'github']} fontSize='1.25rem' style={{ padding: 0 }}/>
+                        </button>
+                    </a>
+                    <a href="mailto: alexkaile@gmail.com">
+                        <button className="btn contact-button btn-outline-light">
+                            <FontAwesomeIcon icon="envelope" fontSize='1.25rem' style={{ padding: 0 }}/>
+                        </button>
+                    </a>
+                    <a href="images/Alexander_Le_Resume_2023.pdf" download="Alexander_Le_Resume_2023.pdf">
+                        <button className="btn contact-button btn-outline-light">
+                            <FontAwesomeIcon icon={faFile} fontSize='1.25rem' style={{ padding: 0 }}/>
+                        </button>
+                    </a>
                 </div>
             </div>
             <FontAwesomeIcon icon="fa-regular fa-file" />
