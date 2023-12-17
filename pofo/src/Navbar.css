@@ -40,15 +40,17 @@ margin: 10px 0;
 }
 
 .contact-button {
-background-color: transparent;
-width: 3rem;
-height: 3rem;
+display: flex;
 justify-content: center;
 align-items: center; 
-display: flex;
+text-align: center;
+background-color: transparent;
+width: 2rem;
+height: 2rem;
+
 margin: 5px;
 cursor: pointer;
-border-radius: 50%;
+border-radius: 20%;
 border-color: white;
 border-width: 1px;
 padding: 0px;

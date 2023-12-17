@@ -3,7 +3,10 @@
   }
   
   .image-animation {
-    width: 500px;
-    height: auto;
+    height: 20vh;
+    width: auto;
+    /* width: 20vw; */
+    /* height: auto; */
     transform: scaleX(-1);
+    margin: 1rem 0;
   }

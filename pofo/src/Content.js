@@ -31,23 +31,19 @@ const Content = () => {
       <div id="scroll-container" className="scroll-container">
         <div className="container">
           <div className="content">
-            <div className="overflow-block"></div>
-            <div className="overflow-block"></div>
-            <div className="overflow-block"></div>
-            <div className="overflow-block"></div>
-            <div className="overflow-block"></div>
-            <div className="overflow-block"></div>
-            <div className="overflow-block"></div>
-            <div className="overflow-block"></div>
-            <div className="overflow-block"></div>
-            <div className="overflow-block"></div>
-            <div className="overflow-block"></div>
-            <div className="overflow-block"></div>
-            <div className="overflow-block"></div>
-            <div className="overflow-block"></div>
-            <div className="overflow-block"></div>
-            <div className="overflow-block"></div>
-            <div className="overflow-block"></div>
+            <div className="content-block-1"></div>
+            <div className="content-block-1"></div>
+            <div className="content-block-1"></div>
+            <div className="content-block-1"></div>
+            <div className="content-block-1"></div>
+            <div className="content-block-1"></div>
+            <div className="content-block-1"></div>
+            <div className="content-block-1"></div>
+            <div className="content-block-1"></div>
+          </div>
+          <div className="landscape">
+            <div className="content-block-2"></div>
+            <div className="content-block-2"></div>
           </div>
         </div>
       </div>
