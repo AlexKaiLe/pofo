@@ -19,7 +19,7 @@ const VerticalNavbar = () => {
             <div className="profile-container">
                 
                 <img className="profile-image" src={profileImg} alt="Contact 1" />
-                <h1>Alex Le</h1>
+                <h1>Alexander Le</h1>
                 <div className="contact-buttons">
                     <button className="contact-button">
                         <FontAwesomeIcon
