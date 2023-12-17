@@ -21,13 +21,13 @@ const Content = () => {
         <div className="content-container">
           <div id="scroll-container" className="scroll-container">
             <div className="content">
-              <h1>Left-to-Right Scrolling Website</h1>
-              <p>Your content goes here...</p>
               <div className="overflow-blocks">
+                <div className="overflow-block">Hello</div>
                 <div className="overflow-block"></div>
                 <div className="overflow-block"></div>
                 <div className="overflow-block"></div>
-                {/* Add more overflow blocks as needed */}
+                <div className="overflow-block"></div>
+                <div className="overflow-block"></div>
               </div>
             </div>
           </div>

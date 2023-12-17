@@ -14,11 +14,18 @@
     flex-direction: column;
     align-items: center;
     margin-bottom: 15px;
-  }
+}
+
+.profile-container h1 {
+    color: white;
+    margin: 0;
+}
   
 .profile-image {
-width: 150px;
-height: 150px;
+width: 15vw;
+height: 15vw;
+min-width: 150px;
+min-height: 150px;
 background-color: #555; /* Placeholder color */
 border-radius: 50%;
 margin: 10px;
@@ -27,7 +34,8 @@ margin: 10px;
 .contact-buttons {
 display: flex;
 flex-wrap: wrap;
-justify-content: center;
+justify-content: space-evenly;
+margin: 10px 0;
 }
 
 .contact-button {
@@ -113,6 +121,11 @@ padding: 10px;
 margin: 5px 0;
 cursor: pointer;
 border-radius: 5px; 
+}
+
+.nav-button p{
+    margin: 0;
+    font-size: 1rem;
 }
 
 .nav-button:hover {
