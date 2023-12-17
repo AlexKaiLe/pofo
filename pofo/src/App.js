@@ -1,6 +1,7 @@
-// import logo from './logo.svg';
-// import './App.css';
+import './App.css';
 import Navbar from './Navbar';
+import Content from './Content';
+
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
@@ -11,12 +12,10 @@ library.add(faEnvelope);
 
 function App() {
   return (
-    // <div className="App">
-    //   {/* <header className="App-header">
-    //   </header> */}
-    //   <Navbar/>
-    // </div>
-    <Navbar/>
+    <div className="wrapper">
+      <Navbar/>
+      <Content/> 
+    </div>
   );
 }
 

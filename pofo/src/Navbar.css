@@ -7,7 +7,7 @@
     min-width: 150px;
     height: 100vh; 
     box-shadow: 0 0 5px rgba(0, 0, 0, 1);
-    }
+}
 
 .profile-container {
     display: flex;
@@ -45,7 +45,7 @@ border-radius: 3px;
 .linkedin-icon:hover {
     color: #0A66C2; /* Hover color */
   }
-  
+
 .description-box {
     background-color: #555;
     color: white;
@@ -55,7 +55,7 @@ border-radius: 3px;
     text-align: center;
 }  
 
-.description-box p {
+.profile-container p {
     margin: 0; /* Remove margin */
     padding: 0; /* Remove padding */
   }

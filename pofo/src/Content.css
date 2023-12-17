@@ -1,0 +1,46 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+  }
+  
+  .content {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .scroll-container {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto; 
+    overflow-y: hidden;
+    height: 100%;
+  }
+  .content-container {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    overflow-y: hidden;
+    height: 100%;
+    width: 100%; /* Make sure the container takes the full width */
+  }
+  
+  .content {
+    flex-shrink: 0;
+  }
+  
+  .overflow-blocks {
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .overflow-block {
+    width: 100vw;
+    height: 100vh;
+    background-color: #3498db;
+    margin-right: 20px;
+  }
+  
