@@ -1,47 +1,46 @@
-body, html {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    height: 100%;
-  }
-  
-  .content {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .scroll-container {
-    display: flex;
-    flex-direction: row;
-    overflow-x: auto; 
-    overflow-y: hidden;
-    height: 100%;
-  }
-  .content-container {
-    display: flex;
-    flex-direction: row;
-    overflow-x: auto;
-    overflow-y: hidden;
-    height: 100%;
-    width: 100%; /* Make sure the container takes the full width */
-  }
-  
-  .content {
-    flex-shrink: 0;
-  }
-  
-  .overflow-blocks {
-    display: flex;
-    overflow: hidden;
-  }
-  
-  .overflow-block {
-    width: 100vw;
-    height: 100vh;
-    /* background-color: transparent; */
-    background-color: navy;
-    margin-right: 20px;
-  }
-  
+.content-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%; 
+  overflow: hidden;
+}
+
+.scroll-container {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto; 
+  overflow-y: hidden;
+  flex: 1; /* Take remaining space */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  background-color: aqua;
+}
+
+.overflow-block {
+  width: 100vw;
+  height: 100vh;
+  background-color: navy;
+  margin-right: 20px;
+}
+
+.runner-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

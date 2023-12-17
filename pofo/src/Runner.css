@@ -1,0 +1,9 @@
+.image-animation-container {
+    overflow: hidden;
+  }
+  
+  .image-animation {
+    width: 500px;
+    height: auto;
+    transform: scaleX(-1);
+  }
