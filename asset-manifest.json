@@ -1,14 +1,22 @@
 {
   "files": {
-    "main.css": "/pofo/static/css/main.9a2f7bfe.css",
-    "main.js": "/pofo/static/js/main.53290426.js",
+    "main.css": "/pofo/static/css/main.184942f2.css",
+    "main.js": "/pofo/static/js/main.2ba9f220.js",
     "static/js/787.06cfae14.chunk.js": "/pofo/static/js/787.06cfae14.chunk.js",
     "static/media/profile_grad.jpg": "/pofo/static/media/profile_grad.b2025801aea4e0a0b5bd.jpg",
     "static/media/headshot.JPG": "/pofo/static/media/headshot.f9479e6ec9aef800f615.JPG",
+    "static/media/Brown_University.png": "/pofo/static/media/Brown_University.bc8f78e059dd33890cee.png",
     "static/media/haas.png": "/pofo/static/media/haas.35efa2f0f22ee2b3ca8a.png",
-    "static/media/brown.png": "/pofo/static/media/brown.57d31738c5552004d86f.png",
+    "static/media/brown.png": "/pofo/static/media/brown.1109480481c04c237dbf.png",
+    "static/media/HMS.png": "/pofo/static/media/HMS.be1fadedb564a0581422.png",
     "static/media/Alexander_Le_Resume.pdf": "/pofo/static/media/Alexander_Le_Resume.d2a4d6e65088c15d39d2.pdf",
     "static/media/amazon.png": "/pofo/static/media/amazon.615ec309bc9dd41be189.png",
+    "static/media/volumental.png": "/pofo/static/media/volumental.35114ebab97f5c7c99ca.png",
+    "static/media/insitro.png": "/pofo/static/media/insitro.d45047cc2c7bfc8b6a61.png",
+    "static/media/CCMB.png": "/pofo/static/media/CCMB.9ad7b82d2908504d365c.png",
+    "static/media/UCD.png": "/pofo/static/media/UCD.7d8d52e8055cbc321894.png",
+    "static/media/alpert_med.png": "/pofo/static/media/alpert_med.c70cb7bb99254cb557fb.png",
+    "static/media/fulcrum.png": "/pofo/static/media/fulcrum.f80b73a9a1ec1a36c272.png",
     "static/media/7.png": "/pofo/static/media/7.f7e7e61f0d1cb2c7e69c.png",
     "static/media/4.png": "/pofo/static/media/4.317ce1a153df3c42d5a0.png",
     "static/media/6.png": "/pofo/static/media/6.be9ea61ebba1573d3d00.png",
@@ -16,13 +24,14 @@
     "static/media/1.png": "/pofo/static/media/1.1ab06036cbd4bb6f2618.png",
     "static/media/5.png": "/pofo/static/media/5.5a729abd5760bfc0451c.png",
     "static/media/2.png": "/pofo/static/media/2.9ecce17b1c9ff5e8b663.png",
+    "static/media/Pointz.png": "/pofo/static/media/Pointz.a0f7e52f21fe8aa50188.png",
     "index.html": "/pofo/index.html",
-    "main.9a2f7bfe.css.map": "/pofo/static/css/main.9a2f7bfe.css.map",
-    "main.53290426.js.map": "/pofo/static/js/main.53290426.js.map",
+    "main.184942f2.css.map": "/pofo/static/css/main.184942f2.css.map",
+    "main.2ba9f220.js.map": "/pofo/static/js/main.2ba9f220.js.map",
     "787.06cfae14.chunk.js.map": "/pofo/static/js/787.06cfae14.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9a2f7bfe.css",
-    "static/js/main.53290426.js"
+    "static/css/main.184942f2.css",
+    "static/js/main.2ba9f220.js"
   ]
 }
