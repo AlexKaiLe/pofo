@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/pofo/static/css/main.efb9b834.css",
-    "main.js": "/pofo/static/js/main.972de551.js",
+    "main.css": "/pofo/static/css/main.ed3232c2.css",
+    "main.js": "/pofo/static/js/main.a10e3506.js",
     "static/js/787.06cfae14.chunk.js": "/pofo/static/js/787.06cfae14.chunk.js",
     "static/media/profile_grad.jpg": "/pofo/static/media/profile_grad.b2025801aea4e0a0b5bd.jpg",
     "static/media/Alexander_Le_Resume.pdf": "/pofo/static/media/Alexander_Le_Resume.d2a4d6e65088c15d39d2.pdf",
@@ -13,12 +13,12 @@
     "static/media/5.png": "/pofo/static/media/5.5a729abd5760bfc0451c.png",
     "static/media/2.png": "/pofo/static/media/2.9ecce17b1c9ff5e8b663.png",
     "index.html": "/pofo/index.html",
-    "main.efb9b834.css.map": "/pofo/static/css/main.efb9b834.css.map",
-    "main.972de551.js.map": "/pofo/static/js/main.972de551.js.map",
+    "main.ed3232c2.css.map": "/pofo/static/css/main.ed3232c2.css.map",
+    "main.a10e3506.js.map": "/pofo/static/js/main.a10e3506.js.map",
     "787.06cfae14.chunk.js.map": "/pofo/static/js/787.06cfae14.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.efb9b834.css",
-    "static/js/main.972de551.js"
+    "static/css/main.ed3232c2.css",
+    "static/js/main.a10e3506.js"
   ]
 }
