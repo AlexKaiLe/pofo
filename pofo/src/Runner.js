@@ -8,6 +8,7 @@ const ImageAnimation = ({ images, isHovered}) => {
 
   useEffect(() => {
     let intervalId;
+    let scrollTimeout;
     let isScrolling = false;
 
     const handleScroll = (event) => {
@@ -43,7 +44,6 @@ const ImageAnimation = ({ images, isHovered}) => {
       };
     }
 
-    let scrollTimeout;
     window.addEventListener('wheel', handleScroll);
 
     return () => {
@@ -53,7 +53,6 @@ const ImageAnimation = ({ images, isHovered}) => {
   }, [images, isHovered]);
 
   const imageStyle = {
-    cursor: 'pointer',
     transform: isScrollingBackwards ? 'scaleX(-1)' : 'scaleX(1)',
   };
 

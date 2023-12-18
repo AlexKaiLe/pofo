@@ -1,12 +1,8 @@
-.image-animation-container {
-    overflow: hidden;
-  }
+
   
-  .image-animation {
-    height: 20vh;
-    width: auto;
-    /* width: 20vw; */
-    /* height: auto; */
-    transform: scaleX(-1);
-    margin: 1rem 0;
-  }
+.image-animation {
+  height: 15vh;
+  width: auto;
+  transform: scaleX(-1);
+  margin: 1rem 0;
+}

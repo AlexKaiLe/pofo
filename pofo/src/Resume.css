@@ -1,0 +1,44 @@
+.resume-content{
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.banner{
+    margin: 2vw;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 50vh;
+    width: 200px;
+    background-color: aqua;
+    padding: 10px;
+    text-align: left;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.banner:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+}
+
+.banner h3{
+    text-align: center;
+}
+
+.image-container {
+    text-align: center;
+}
+
+.banner img {
+    height: 50px;
+    width: auto;
+    margin: 2vh 0;
+}
+  
+.banner h3{
+    margin: 0;
+}

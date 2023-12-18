@@ -39,6 +39,7 @@
 
 .content-block-1 {
   width: 80vw;
+  min-width: 500px;
   height: 100%;
   background-color: skyblue;
   margin-right: 20px;

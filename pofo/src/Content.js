@@ -9,6 +9,7 @@ import img_6 from './images/6.png';
 import img_7 from './images/7.png'; 
 import Runner from './Runner';
 import Welcome from './Welcome';
+import Resume from './Resume'
 
 const images = [img_1, img_2, img_3, img_4, img_5, img_6, img_7];
 
@@ -50,10 +51,8 @@ const Content = () => {
             <div className="content-block-1">
               <Welcome/>
             </div>
-            <div className="content-block-1">
-              <Welcome/>
-            </div>
-            <div className="content-block-1"></div>
+            <Resume/>
+              
             <div className="content-block-1"></div>
             <div className="content-block-1"></div>
             <div className="content-block-1"></div>
