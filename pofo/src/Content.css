@@ -25,7 +25,7 @@
   justify-content: space-evenly;
   overflow: hidden;
   align-items: center;
-  background-color: aqua;
+  background-color: whitesmoke;
 }
 
 .landscape{
@@ -34,24 +34,22 @@
   justify-content: space-evenly;
   overflow: hidden;
   align-items: center;
-  background-color: aqua;
+  background-color: whitesmoke;
 }
 
 .content-block-1 {
-  width: 100vw;
+  width: 80vw;
   height: 100%;
-  background-color: navy;
+  background-color: skyblue;
   margin-right: 20px;
-  border-color: brown;
   border-width: 10px;
 }
 
 .content-block-2 {
   width: 100vw;
   height: 100%;
-  background-color: red;
+  background-color: forestgreen;
   margin-right: 20px;
-  border-color: brown;
   border-width: 10px;
 }
 

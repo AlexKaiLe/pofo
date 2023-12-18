@@ -1,0 +1,38 @@
+.welcome-wraper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  
+.welcome-wraper h1{
+    color: white;
+    margin: 2vw 5vw;
+}
+  
+
+.body{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.img-box{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: beige;
+}
+
+.text-box{
+    max-width: 50vw;
+    width: auto;
+    height: 50vh;
+    border-radius: 50px;
+    background-color: beige;
+}
+
+.text-box p{
+    margin: 1rem;
+    font-size: 1.25rem;
+}

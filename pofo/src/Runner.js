@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Runner.css';
 
-const ImageAnimation = ({ images }) => {
+const ImageAnimation = ({ images, isHovered}) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [, setIsAnimating] = useState(false);
   const [isScrollingBackwards, setIsScrollingBackwards] = useState(false);
@@ -11,29 +11,37 @@ const ImageAnimation = ({ images }) => {
     let isScrolling = false;
 
     const handleScroll = (event) => {
-      const deltaY = event.deltaY;
+      if (isHovered) {
+        const deltaY = event.deltaY;
+        const deltaX = event.deltaX;
 
-      if (!isScrolling) {
-        console.log('Mouse started scrolling!');
-        isScrolling = true;
-        setIsAnimating(true);
+        if (!isScrolling) {
+          isScrolling = true;
+          setIsAnimating(true);
 
-        intervalId = setInterval(() => {
-          setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-        }, 50);
-      }
+          intervalId = setInterval(() => {
+            setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+          }, 50);
+        }
 
-      clearTimeout(scrollTimeout);
-      scrollTimeout = setTimeout(() => {
-        console.log('Mouse stopped scrolling!');
-        isScrolling = false;
-        setIsAnimating(false);
-        clearInterval(intervalId);
-      }, 200);
+        clearTimeout(scrollTimeout);
+        scrollTimeout = setTimeout(() => {
+          isScrolling = false;
+          setIsAnimating(false);
+          clearInterval(intervalId);
+        }, 200);
 
-      // Detect scrolling direction
-      setIsScrollingBackwards(deltaY < 0);
-    };
+        const horizontal = Math.abs(deltaX)/Math.abs(deltaY) > 1
+        const vertical = Math.abs(deltaY)/Math.abs(deltaX) > 1
+
+        if (horizontal){
+          setIsScrollingBackwards(deltaX < 0);
+        } 
+        if (vertical){
+          setIsScrollingBackwards(deltaY < 0);
+        }
+      };
+    }
 
     let scrollTimeout;
     window.addEventListener('wheel', handleScroll);
@@ -42,7 +50,7 @@ const ImageAnimation = ({ images }) => {
       window.removeEventListener('wheel', handleScroll);
       clearInterval(intervalId);
     };
-  }, [images]);
+  }, [images, isHovered]);
 
   const imageStyle = {
     cursor: 'pointer',

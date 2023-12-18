@@ -8,6 +8,7 @@
     height: 100vh; 
     box-shadow: 5px 0 5px rgba(0, 0, 0, 0.5);
     z-index: 1;
+    overflow-y: auto;
 }
 
 .profile-container {
@@ -27,7 +28,6 @@ width: 15vw;
 height: 15vw;
 min-width: 150px;
 min-height: 150px;
-background-color: #555; /* Placeholder color */
 border-radius: 50%;
 margin: 10px;
 }
@@ -40,53 +40,45 @@ margin: 10px 0;
 }
 
 .contact-button {
-display: flex;
-justify-content: center;
-align-items: center; 
-text-align: center;
-background-color: transparent;
-width: 2rem;
-height: 2rem;
-
-margin: 5px;
-cursor: pointer;
-border-radius: 20%;
-border-color: white;
-border-width: 1px;
-padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+    background-color: transparent;
+    width: 2rem;
+    height: 2rem;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 20%;
+    border-color: white;
+    border-width: 1px;
+    padding: 0px;
 }
 
 .btn {
     display: inline-block;
     font-weight: 400;
     color: #212529;
-    /* text-align: center; */
-    /* vertical-align: middle; */
+    text-align: center;
+    vertical-align: middle;
     cursor: pointer;
     user-select: none;
     background-color: transparent;
     border: 0.125rem solid transparent;
-    /* padding: .5rem; */
-    /* font-size: 1rem; */
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
     line-height: 1.5;
+    border-radius: 0.5rem;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; 
+    border-radius: 20%;
+    display: inline-flex;
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 1.25rem;
+    justify-content: center;
+    align-items: center; 
+    margin: 5px!important; 
 }
-
-@media (prefers-reduced-motion: reduce) {
-    .btn {
-        transition: none; } }
-    .btn:hover {
-        color: #212529;
-        text-decoration: none; }
-    .btn:focus, .btn.focus {
-        outline: 0;
-        box-shadow: 0 0 0 0.2rem rgba(127, 176, 199, 0.25); }
-    .btn.disabled, .btn:disabled {
-        opacity: 0.65; }
-    
-    a.btn.disabled,
-    fieldset:disabled a.btn {
-    pointer-events: none; }
 
 .btn-outline-light {
     color: #f8f9fa;
@@ -108,22 +100,26 @@ padding: 0px;
     box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5); }
 
 .linkedin-icon:hover {
-    color: #0A66C2; /* Hover color */
+    color: #0A66C2; 
   }
 
 .profile-container p {
-    margin: 0; /* Remove margin */
-    padding: 0; /* Remove padding */
+    margin: 0; 
+    padding: 0; 
   }
 
 .nav-button {
-background-color: #555;
-color: white;
-border: none;
-padding: 10px;
-margin: 5px 0;
-cursor: pointer;
-border-radius: 5px; 
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 5px 0;
+    cursor: pointer;
+    border-radius: 5px; 
+}
+
+.material-ui-button{
+    margin: 10px;
 }
 
 .nav-button p{
@@ -133,4 +129,23 @@ border-radius: 5px;
 
 .nav-button:hover {
 background-color: #777;
+}
+
+.fa-icon{
+    font-size: 1.5rem;
+    padding: 0
+}
+
+.light-dark-mode{
+    /* position: fixed; */
+    margin-top: auto;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    color: white;
+}
+.light-dark-mode p{
+    margin: 0;
 }
