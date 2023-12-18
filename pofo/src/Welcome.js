@@ -50,6 +50,7 @@ const Welcome = () => {
                     <p>My name is Alexander Le.</p>
                     <p>Welcome to my personal website where I explore my interests in software engineering, biology, and industrial design. I have a background in Computational Biology with an emphasis on deep learning and molecular biology.</p>
                     <p>However, I still keep in touch with my creative side through design and entrepreneurial ventures.</p>
+                    <p>To have the best experience, please view the website on a computer in full screen. Scroll up and down to move around!</p>
                 </div>
                 <div className='img-format'>
                     <img className="img-box" src={headshot} alt="Headshot"></img>
