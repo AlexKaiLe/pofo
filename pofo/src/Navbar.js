@@ -22,31 +22,32 @@ const buttonStyle = {
       backgroundColor: '#777',
     },
   };
+
 const toggleStyle = {
     margin: '5px',
     cursor: 'pointer'
   };
 
 const VerticalNavbar = () => {
-    const [isHovered, setIsHovered] = useState(false);
+    // const [isHovered, setIsHovered] = useState(false);
 
-    const handleMouseEnter = () => {
-        setIsHovered(true);
-    };
+    // const handleMouseEnter = () => {
+    //     setIsHovered(true);
+    // };
 
-    const handleMouseLeave = () => {
-        setIsHovered(false);
-    };
+    // const handleMouseLeave = () => {
+    //     setIsHovered(false);
+    // };
+
     return (
         <Slide direction="right" in={true} mountOnEnter unmountOnExit timeout={1000}>
-            <div className={`vertical-navbar ${isHovered ? 'scrollable' : ''}`}
+            {/* <div className={`vertical-navbar ${isHovered ? 'scrollable' : ''}`}
                 onMouseEnter={handleMouseEnter}
-                onMouseLeave={handleMouseLeave}>
+                onMouseLeave={handleMouseLeave}> */}
+            <div className="vertical-navbar">
                 <div className="profile-container">
-                    
                     <img className="profile-image" src={profileImg} alt="Contact 1" />
                     <h1>Alexander Le</h1>
-                    
                     <div className="contact-buttons">
                         <a href="https://www.linkedin.com/in/alexkaile/" className="btn btn-outline-light">
                                 <FontAwesomeIcon icon={['fab', 'linkedin']} className='fa-icon'/>
@@ -62,22 +63,24 @@ const VerticalNavbar = () => {
                         </a>
                     </div>
                 </div>
-                <FontAwesomeIcon icon="fa-regular fa-file" />
-                <Button variant="contained" sx={buttonStyle}>
-                    Welcome
-                </Button>
-                <Button variant="contained" sx={buttonStyle}>
-                    Resume
-                </Button>
-                <Button variant="contained" sx={buttonStyle}>
-                    Projects
-                </Button>
-                <Button variant="contained" sx={buttonStyle}>
-                    Hobbies
-                </Button>
-                <Button variant="contained" sx={buttonStyle}>
-                    Contact
-                </Button>
+                <div className='nav-btn-container'>
+                    <Button variant="contained" sx={buttonStyle}>
+                        Welcome
+                    </Button>
+                    <Button variant="contained" sx={buttonStyle}>
+                        Resume
+                    </Button>
+                    <Button variant="contained" sx={buttonStyle}>
+                        Projects
+                    </Button>
+                    <Button variant="contained" sx={buttonStyle}>
+                        Hobbies
+                    </Button>
+                    <Button variant="contained" sx={buttonStyle}>
+                        Contact
+                    </Button>
+                </div>
+                
                 <div className="light-dark-mode">
                     <p>Light/Dark Mode</p>
                     <Switch sx={toggleStyle} defaultChecked />

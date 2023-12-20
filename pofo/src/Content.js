@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import './Content.css';
 import img_1 from './images/1.png'; 
 import img_2 from './images/2.png'; 
@@ -41,17 +41,28 @@ const Content = () => {
     };
   }, [isHovered]);
     
+  const scrollingDivRef = useRef(null);
+
+  const handleWheel = (event) => {
+    if (scrollingDivRef.current) {
+      event.preventDefault();
+      scrollingDivRef.current.scrollTop += event.deltaY;
+      scrollingDivRef.current.scrollLeft += event.deltaX;
+    }
+  };
+
   return (
     <div className={`content-container ${isHovered ? 'scrollable' : ''}`}
     onMouseEnter={handleMouseEnter}
     onMouseLeave={handleMouseLeave}>
+      
       <div id="scroll-container" className="scroll-container">
         <div className="container">
           <div className="content">
-            <div className="content-block-1">
-              <Welcome/>
-            </div>
+            <Welcome/>
             <Resume/>
+            <div className="content-block-1">
+            </div>
               
             <div className="content-block-1"></div>
             <div className="content-block-1"></div>
@@ -60,15 +71,17 @@ const Content = () => {
             <div className="content-block-1"></div>
             <div className="content-block-1"></div>
           </div>
-          <div className="landscape">
+          
+          <div className="runner-container" onWheel={handleWheel}>
+            <Runner className="runner" images={images} isHovered={isHovered} handleWheel={handleWheel}/>
+          </div>
+          <div className="landscape" ref={scrollingDivRef}>
             <div className="content-block-2"></div>
             <div className="content-block-2"></div>
           </div>
         </div>
       </div>
-      <div className="runner-container">
-        <Runner className="runner" images={images} isHovered={isHovered}/>
-      </div>
+      
     </div>
   );
 };

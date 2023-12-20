@@ -11,6 +11,12 @@ library.add(fab);
 library.add(faEnvelope);
 
 function App() {
+
+  // return (
+  //   <div className='test'>
+  //     <p>Your abnormal text goes here. It will fill the container vertically before going sideways.</p>
+  //   </div>
+  // );
   return (
     <div className="wrapper">
       <Navbar/>

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Runner.css';
 
-const ImageAnimation = ({ images, isHovered}) => {
+const ImageAnimation = ({ images, isHovered, handleWheel}) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [, setIsAnimating] = useState(false);
   const [isScrollingBackwards, setIsScrollingBackwards] = useState(false);
@@ -57,7 +57,7 @@ const ImageAnimation = ({ images, isHovered}) => {
   };
 
   return (
-    <div style={imageStyle}>
+    <div style={imageStyle} onWheel={handleWheel}>
       <img className="image-animation" src={images[currentIndex]} alt={`${currentIndex + 1}`} />
     </div>
   );
