@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/pofo/static/css/main.ef243cf7.css",
-    "main.js": "/pofo/static/js/main.de4d0473.js",
+    "main.css": "/pofo/static/css/main.f617f27f.css",
+    "main.js": "/pofo/static/js/main.b4cbfbf1.js",
     "static/js/787.06cfae14.chunk.js": "/pofo/static/js/787.06cfae14.chunk.js",
     "static/media/profile_grad.jpg": "/pofo/static/media/profile_grad.b2025801aea4e0a0b5bd.jpg",
     "static/media/headshot.JPG": "/pofo/static/media/headshot.f9479e6ec9aef800f615.JPG",
@@ -26,12 +26,12 @@
     "static/media/2.png": "/pofo/static/media/2.9ecce17b1c9ff5e8b663.png",
     "static/media/Pointz.png": "/pofo/static/media/Pointz.a0f7e52f21fe8aa50188.png",
     "index.html": "/pofo/index.html",
-    "main.ef243cf7.css.map": "/pofo/static/css/main.ef243cf7.css.map",
-    "main.de4d0473.js.map": "/pofo/static/js/main.de4d0473.js.map",
+    "main.f617f27f.css.map": "/pofo/static/css/main.f617f27f.css.map",
+    "main.b4cbfbf1.js.map": "/pofo/static/js/main.b4cbfbf1.js.map",
     "787.06cfae14.chunk.js.map": "/pofo/static/js/787.06cfae14.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ef243cf7.css",
-    "static/js/main.de4d0473.js"
+    "static/css/main.f617f27f.css",
+    "static/js/main.b4cbfbf1.js"
   ]
 }
