@@ -36,7 +36,7 @@ const Welcome = () => {
 
   return (
     <div className="shape" ref={targetRef}>
-      {/* <Slide direction="up" in={isVisible} mountOnEnter unmountOnExit timeout={2000}> */}
+      <Slide direction="up" in={isVisible} mountOnEnter unmountOnExit timeout={2000}>
         <div className="welcome-wrapper">
             <h1>Welcome</h1>
             <div className="education-imgs">
@@ -57,7 +57,7 @@ const Welcome = () => {
                 </div>
           </div>
         </div>
-      {/* </Slide> */}
+      </Slide>
     </div>
   );
 }

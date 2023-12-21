@@ -35,14 +35,14 @@ const ResumeBanner = ({ image, company, position, text }) => {
   ));
 
   return (
-    <div ref={targetRef} style={{ height: '30vh' }}>
+    <div ref={targetRef} className='banner-container'>
       <Slide direction="up" in={isVisible} mountOnEnter timeout={1300}>
         <div className="banner">
           <div className="image-container">
             <img src={image} alt="Work Experience" />
+            <h2>{company}</h2>
+            <p><b>{position}</b></p>
           </div>
-          <h2>{company}</h2>
-          <p><b>{position}</b></p>
           <ul>{textPoints}</ul>
         </div>
       </Slide>

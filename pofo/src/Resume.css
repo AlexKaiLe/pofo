@@ -15,48 +15,49 @@
   justify-content: center;
 }
 
-.banner {
+.banner-container{
   margin: 0 2vw;
-  padding: 0;
+}
+
+.banner {
   display: flex;
   flex-direction: column;
-  align-items: left;
-  flex-wrap: wrap;
   justify-content: flex-start;
-  height: 65vh; 
+  height: 60vh; 
   width: 300px;
   background-color: #fff;
-  padding: 10px;
+  padding: 2vh 2vw;
   text-align: left;
   overflow-y: auto; 
+  padding: 10px;
+  border-radius: 10px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
-  transition: box-shadow 0.3s ease-in-out;
 }
 
 
 .banner:hover {
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+  transition: box-shadow 0.3s ease-in-out;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8);
 }
 
 .banner h2{
   text-align: center;
   margin: 0;
-  font-size: 2.5vh;
-}
-
-.banner p{
-  text-align: center;
-  margin: 5px;
-  font-size: 2vh;
 }
 
 .banner h3{
   text-align: center;
 }
 
+.banner p{
+  text-align: center;
+  margin: 5px;
+}
+
 .banner ul {
   display: flex;
   flex-direction: column;
+  /* justify-content: space-around; */
   align-items: left;
   flex-wrap: wrap;
   list-style-type: disc; /* Set the bullet style */
@@ -65,8 +66,8 @@
 }
 
 .banner li {
-  margin-bottom: 5px; /* Adjust the margin between list items */
-  font-size: max(.5rem, 2vh);
+  margin-bottom: 5px;
+  font-size: 1rem;
 }
 
 .image-container {
@@ -75,10 +76,57 @@
 
 .banner img {
   height: 8vh;
+  max-height: 75px;
   width: auto;
   margin: 2vh 0;
 }
 
 .banner h3{
   margin: 0;
+}
+
+@media screen and (max-height: 650px){
+  .banner {
+    min-width: 400px;
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+  }
+
+  .banner h2{
+    font-size: 1rem;
+  }
+  
+  .banner p{
+    font-size: .75rem;
+  }
+
+  .banner li {
+    margin-bottom: 5px;
+    font-size: .9rem;
+  }
+}
+
+@media screen and (max-height: 400px){
+  .banner{
+    height: 160px;
+  }
+
+  .banner li {
+    margin-bottom: 5px;
+    font-size: .8rem;
+  }
+}
+
+@media screen and (max-width: 800px){
+  .banner{
+    width: 200px;
+  }
+  .banner img {
+    height: auto;
+    max-height: none;
+    width: 20vw;
+    max-width: 100px;
+    margin: 2vh 0;
+  }
 }

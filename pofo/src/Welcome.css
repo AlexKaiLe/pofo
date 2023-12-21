@@ -1,6 +1,6 @@
 .shape{
-    margin: 0 2vw;
-    min-width: 80vw;
+    /* margin: 0 2vw; */
+    min-width: 900px;
     box-sizing: border-box;
     padding: 0;
 }
@@ -11,18 +11,19 @@
     flex-direction: column;
     justify-content: space-evenly;
     background-color: skyblue;
-    margin: 0 2vw;
+    width: 80vw;
+    min-width: 900px;
     height: 80vh;
-    width: 100%;
 }
 
-.welcome-wraper h1 {
+.welcome-wrapper h1 {
     color: white;
     margin: 2vh 2vw;
 }
 
 .education {
     height: 15vh;
+    min-height: 75px;
     width: auto;
     border-radius: 10px;
     margin: 10px;
@@ -52,7 +53,7 @@
 }
 
 .img-box {
-    height: 30vh;
+    height: min(30vh, 20vw);
     min-height: 200px;
     width: auto;
     border-radius: 10px;
@@ -72,4 +73,19 @@
 .text-box h3 {
     margin: 0;
     font-size: 1.2rem;
+}
+
+@media screen and (max-height: 600px){
+    .shape {
+        min-width: 1200px;
+    }
+
+    .welcome-wrapper {
+        min-width: 1200px;
+    }
+
+    .text-box p {
+        margin: 1vh 0;
+        font-size: .75rem;
+    }
 }

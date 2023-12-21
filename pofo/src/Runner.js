@@ -43,7 +43,7 @@ const ImageAnimation = ({ images, isHovered, handleWheel}) => {
         }
       };
     }
-
+    
     window.addEventListener('wheel', handleScroll);
 
     return () => {
