@@ -1,75 +1,84 @@
 .resume-content{
-    height: 80vh;
-    min-width: 80vw;
+  height: 80vh;
+  margin: 0 2vw;
+  /* min-width: 80vw; */
 }
 
 .resume-content h1{
-    color: white;
-    margin: 2vh 2vw;
+  /* color: white; */
+  margin: 2vh 2vw;
 }
 
 .resume-banners{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
-.banner{
-    margin: 2vw;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    height: 60vh;
-    width: 300px;
-    background-color: transparent;
-    background-color: #fff;
-    padding: 10px;
-    text-align: left;
-    overflow-y: auto;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
-    transition: box-shadow 0.3s ease-in-out;
+.banner {
+  margin: 0 2vw;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  height: 65vh; 
+  width: 300px;
+  background-color: #fff;
+  padding: 10px;
+  text-align: left;
+  overflow-y: auto; 
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.3s ease-in-out;
 }
+
 
 .banner:hover {
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
 }
 
 .banner h2{
-    text-align: center;
-    margin: 0;
+  text-align: center;
+  margin: 0;
+  font-size: 2.5vh;
 }
 
 .banner p{
-    margin: 0;
+  text-align: center;
+  margin: 5px;
+  font-size: 2vh;
 }
 
 .banner h3{
-    text-align: center;
+  text-align: center;
 }
 
 .banner ul {
-    list-style-type: disc; /* Set the bullet style */
-    padding: 0; /* Remove default padding */
-    margin: 1rem; /* Remove default margin */
-    font-size: min(2vw, 2vh);
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  flex-wrap: wrap;
+  list-style-type: disc; /* Set the bullet style */
+  padding: 0; /* Remove default padding */
+  margin: 0 2vw; /* Remove default margin */
+}
+
 .banner li {
-    margin-bottom: 5px; /* Adjust the margin between list items */
+  margin-bottom: 5px; /* Adjust the margin between list items */
+  font-size: max(.5rem, 2vh);
 }
 
 .image-container {
-    text-align: center;
+  text-align: center;
 }
 
 .banner img {
-    height: 50px;
-    width: auto;
-    margin: 2vh 0;
+  height: 8vh;
+  width: auto;
+  margin: 2vh 0;
 }
-  
+
 .banner h3{
-    margin: 0;
+  margin: 0;
 }

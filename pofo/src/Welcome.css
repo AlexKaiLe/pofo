@@ -1,24 +1,32 @@
 .shape{
-    height: 80vh;
-    background-color: skyblue;
     margin: 0 2vw;
     min-width: 80vw;
+    box-sizing: border-box;
+    padding: 0;
 }
 
-.welcome-wraper {
+.welcome-wrapper {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 100%;
-    /* min-width: 80vw; */
     background-color: skyblue;
     margin: 0 2vw;
+    height: 80vh;
+    width: 100%;
 }
 
 .welcome-wraper h1 {
     color: white;
-    margin: 2vh 5vw;
+    margin: 2vh 2vw;
+}
+
+.education {
+    height: 15vh;
+    width: auto;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: white;
 }
 
 .education-imgs {
@@ -27,20 +35,13 @@
     justify-content: space-evenly;
 }
 
-.education {
-    height: min(15vh, 15vw);
-    min-height: 100px;
-    width: auto;
-    border-radius: 10px;
-    margin: 10px;
-    background-color: white;
-}
-
 .body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    /* box-sizing: border-box; Ensure padding is included in the width calculation */
+    /* height: 100px;
+    width: 100px; */
+    /* background-color: black; */
     padding: 0 2vw; /* Adjust padding as needed */
 }
 
@@ -59,10 +60,8 @@
 
 .text-box {
     margin: 2vh 2vw;
-    height: auto;
-    min-height: 200px;
-    width: 40vw;
-    min-width: 450px;
+    height: max(100%, 200px);
+    width: max(450px, 40vw);
 }
 
 .text-box p {
