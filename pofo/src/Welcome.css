@@ -1,6 +1,8 @@
 .shape{
     /* margin: 0 2vw; */
+    width: 80vw;
     min-width: 900px;
+    height: 80vh;
     box-sizing: border-box;
     padding: 0;
 }
