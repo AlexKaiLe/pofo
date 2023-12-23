@@ -1,12 +1,33 @@
 import React, { useEffect, useState, useRef } from 'react';
 import './Content.css';
-import img_1 from './images/runner/1.png'; 
-import img_2 from './images/runner/2.png'; 
-import img_3 from './images/runner/3.png'; 
-import img_4 from './images/runner/4.png'; 
-import img_5 from './images/runner/5.png'; 
-import img_6 from './images/runner/6.png'; 
-import img_7 from './images/runner/7.png'; 
+import runner_1 from './images/runner/1.png'; 
+import runner_2 from './images/runner/2.png'; 
+import runner_3 from './images/runner/3.png'; 
+import runner_4 from './images/runner/4.png'; 
+import runner_5 from './images/runner/5.png'; 
+import runner_6 from './images/runner/6.png'; 
+import runner_7 from './images/runner/7.png'; 
+
+import axol_1 from './images/axolotl/1.png'; 
+import axol_2 from './images/axolotl/2.png'; 
+import axol_3 from './images/axolotl/3.png'; 
+import axol_4 from './images/axolotl/4.png'; 
+import axol_5 from './images/axolotl/5.png'; 
+import axol_6 from './images/axolotl/6.png'; 
+import axol_7 from './images/axolotl/7.png'; 
+import axol_8 from './images/axolotl/8.png'; 
+import axol_9 from './images/axolotl/9.png'; 
+import axol_10 from './images/axolotl/10.png'; 
+import axol_11 from './images/axolotl/11.png'; 
+import axol_12 from './images/axolotl/12.png'; 
+import axol_13 from './images/axolotl/13.png'; 
+import axol_14 from './images/axolotl/14.png'; 
+import axol_15 from './images/axolotl/15.png'; 
+import axol_16 from './images/axolotl/16.png'; 
+import axol_17 from './images/axolotl/17.png'; 
+import axol_18 from './images/axolotl/18.png'; 
+
+
 
 import Runner from './Runner';
 import Welcome from './Welcome';
@@ -14,7 +35,15 @@ import Resume from './Resume';
 import Skills from './Skills';
 
 
-const images = [img_1, img_2, img_3, img_4, img_5, img_6, img_7];
+const runner_images = [runner_1, runner_2, runner_3, runner_4, runner_5, runner_6, runner_7];
+const axolotl_images = [axol_1, axol_2, axol_3, axol_4, axol_5, axol_6, axol_7, axol_8, axol_9, axol_10, axol_11, axol_12, axol_13, axol_14, axol_15, axol_16, axol_17, axol_18];
+
+const randomValue = Math.random();
+  
+  // Define your constant values in an array
+const values = [axolotl_images, runner_images];
+const randomIndex = Math.floor(randomValue * values.length);
+const images = values[randomIndex];
 
 const Content = () => {
   const [isHovered, setIsHovered] = useState(false);

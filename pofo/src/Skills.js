@@ -49,6 +49,8 @@ import zapier from './images/skills-icons/zapier.png'
 import adobe from './images/skills-icons/adobe.png'
 import autodesk from './images/skills-icons/autodesk.png'
 import solidworks from './images/skills-icons/solidworks.png'
+import google from './images/skills-icons/g-suite.png'
+import microsoft from './images/skills-icons/microsoft-suite.png'
 
 const Skills = () => {
     const programing_languages = [
@@ -105,6 +107,8 @@ const Skills = () => {
         { imageUrl: adobe, description: 'adobe' },
         { imageUrl: autodesk, description: 'autodesk' },
         { imageUrl: solidworks, description: 'solidworks' },
+        { imageUrl: google, description: 'google' },
+        { imageUrl: microsoft, description: 'microsoft' },
     ];
     return(
         <div className='skills-content'>
@@ -112,7 +116,7 @@ const Skills = () => {
             <div className='skills-banner'>
                 <SkillsBanner text="Programing Languages" data={programing_languages}/>
                 <SkillsBanner text="Programing Packages" data={programing_packages}/>
-                <SkillsBanner text="Project Management" data={prject_management}/>
+                <SkillsBanner text="Project Management & Design" data={prject_management}/>
             </div>
         </div>
     );

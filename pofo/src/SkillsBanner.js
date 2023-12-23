@@ -30,7 +30,7 @@ const Skills = ({text, data}) => {
     }, []);
     return(
         <div ref={targetRef}>
-            <Slide direction="down" in={isVisible} mountOnEnter timeout={1300}>
+            <Slide direction="down" in={isVisible} mountOnEnter timeout={2000}>
                 <div className='skills-list'>
                     <h3>{text}</h3>
                     <div className='skills-box'>
