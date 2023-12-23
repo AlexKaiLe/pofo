@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Navbar.css';
-import profileImg from './images/profile_grad.jpg';
-import Resume from './images/Alexander_Le_Resume.pdf';
+import profileImg from './images/education/profile_grad.jpg';
+import Resume from './images/resume/Alexander_Le_Resume.pdf';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFilePdf } from '@fortawesome/free-solid-svg-icons';
 import Button from '@mui/material/Button';
@@ -64,7 +64,7 @@ const VerticalNavbar = () => {
                     </div>
                 </div>
                 <div className='nav-btn-container'>
-                    <Button variant="contained" sx={buttonStyle}>
+                    <Button variant="contained" sx={buttonStyle} href='#WELCOME_PAGE'>
                         Welcome
                     </Button>
                     <Button variant="contained" sx={buttonStyle}>

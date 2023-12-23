@@ -1,12 +1,12 @@
 import React, { useEffect, useState, useRef } from 'react';
 import './Content.css';
-import img_1 from './images/1.png'; 
-import img_2 from './images/2.png'; 
-import img_3 from './images/3.png'; 
-import img_4 from './images/4.png'; 
-import img_5 from './images/5.png'; 
-import img_6 from './images/6.png'; 
-import img_7 from './images/7.png'; 
+import img_1 from './images/runner/1.png'; 
+import img_2 from './images/runner/2.png'; 
+import img_3 from './images/runner/3.png'; 
+import img_4 from './images/runner/4.png'; 
+import img_5 from './images/runner/5.png'; 
+import img_6 from './images/runner/6.png'; 
+import img_7 from './images/runner/7.png'; 
 
 import Runner from './Runner';
 import Welcome from './Welcome';

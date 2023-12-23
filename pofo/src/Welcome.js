@@ -1,10 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './Welcome.css'
 import Slide from '@mui/material/Slide';
-import headshot from './images/headshot.JPG'
-import brown from './images/brown.png'
-import haas from './images/haas.png'
-import RISD from './images/RISD.png'
+import headshot from './images/education/headshot.JPG'
+import brown from './images/education/brown.png'
+import haas from './images/education/haas.png'
+import RISD from './images/education/RISD.png'
 
 
 const Welcome = () => {

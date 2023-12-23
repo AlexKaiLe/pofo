@@ -1,8 +1,7 @@
 .skills-content{
     height: 80vh;
-    margin: 0 2vw;
-    width: 2300px;
-    /* min-width: 1500px; */
+    margin: 0 min(10vw, 50px);
+    width: 3000px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -44,6 +43,7 @@
     display: flex;
     flex-direction: column;
     height: 50vh;
+    margin: 2vh 2vw;
 }
 
 .skills-list h3{
@@ -52,7 +52,7 @@
 
 .skills {
     text-align: center;
-    margin: 1vh 2vw;
+    margin: 2vh min(2vw, 20px);
 }
 
 .skills p{
@@ -65,19 +65,22 @@
 
 @media screen and (max-height: 900px){
     .skills-content{
-        min-width: 4000px;
+        min-width: 3000px;
     }
 }
 
-@media screen and (max-height: 500px){
+@media screen and (max-height: 600px){
     .skills-content{
-        min-width: 5000px;
+        min-width: 4000px;
+    }
+    .skills-list{
+        height: 50vh
     }
 }
 
 @media screen and (max-height: 350px){
     .skills-content{
-        width: 8000px;
+        width: 7000px;
     }
     .skills-box{
         height: 50vh;

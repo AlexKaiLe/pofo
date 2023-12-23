@@ -28,7 +28,6 @@ const Skills = ({text, data}) => {
 
         return () => observer.disconnect();
     }, []);
-    console.log(data)
     return(
         <div ref={targetRef}>
             <Slide direction="down" in={isVisible} mountOnEnter timeout={1300}>
