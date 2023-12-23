@@ -7,9 +7,12 @@ import img_4 from './images/4.png';
 import img_5 from './images/5.png'; 
 import img_6 from './images/6.png'; 
 import img_7 from './images/7.png'; 
+
 import Runner from './Runner';
 import Welcome from './Welcome';
-import Resume from './Resume'
+import Resume from './Resume';
+import Skills from './Skills';
+
 
 const images = [img_1, img_2, img_3, img_4, img_5, img_6, img_7];
 
@@ -17,12 +20,10 @@ const Content = () => {
   const [isHovered, setIsHovered] = useState(false);
   const handleMouseEnter = () => {
     setIsHovered(true);
-    console.log("enter")
   };
 
   const handleMouseLeave = () => {
       setIsHovered(false);
-      console.log("leave")
   };
 
   useEffect(() => {
@@ -35,7 +36,6 @@ const Content = () => {
     };
 
     window.addEventListener('wheel', handleScroll);
-    console.log(isHovered)
     return () => {
       window.removeEventListener('wheel', handleScroll);
     };
@@ -45,7 +45,7 @@ const Content = () => {
 
   const handleWheel = (event) => {
     if (scrollingDivRef.current) {
-      event.preventDefault();
+      // event.preventDefault();
       scrollingDivRef.current.scrollTop += event.deltaY;
       scrollingDivRef.current.scrollLeft += event.deltaX;
     }
@@ -61,6 +61,7 @@ const Content = () => {
           <div className="content">
             <Welcome/>
             <Resume/>
+            <Skills/>
             <div className="content-block-1">
             </div>
               
@@ -76,6 +77,9 @@ const Content = () => {
             <Runner className="runner" images={images} isHovered={isHovered} handleWheel={handleWheel}/>
           </div>
           <div className="landscape" ref={scrollingDivRef}>
+            <div className="content-block-2"></div>
+            <div className="content-block-2"></div>
+            <div className="content-block-2"></div>
             <div className="content-block-2"></div>
             <div className="content-block-2"></div>
           </div>
