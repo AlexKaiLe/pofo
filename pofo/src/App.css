@@ -9,30 +9,4 @@ body {
 .wrapper {
   display: flex;
   height: 100vh;
-  /* display: inline-block; */
-  /* display: flex;
-  flex-direction: row;
-  overflow-x: auto; */
-  
-}
-
-.box{
-  background-color: black;
-  width: 100px;
-  height: 100px;
-}
-
-.test {
-  width: 100%; /* Optionally, set a specific width for the container */
-  height: 200px;
-  overflow-x: auto; /* Enable horizontal scrolling if content overflows */
-  white-space: nowrap; /* Prevent text from wrapping to the next line */
-}
-
-.test p {
-  margin: 0;
-  box-sizing: border-box;
-  white-space: nowrap; /* Prevent text from wrapping to the next line */
-  overflow-x: auto; /* Enable horizontal scrolling if content overflows */
-  display: inline-block; /* Ensure the paragraph behaves like an inline element */
 }

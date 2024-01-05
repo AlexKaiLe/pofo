@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Navbar.css';
 import profileImg from './images/education/profile_grad.jpg';
 import Resume from './images/resume/Alexander_Le_Resume.pdf';
@@ -29,21 +29,8 @@ const toggleStyle = {
   };
 
 const VerticalNavbar = () => {
-    // const [isHovered, setIsHovered] = useState(false);
-
-    // const handleMouseEnter = () => {
-    //     setIsHovered(true);
-    // };
-
-    // const handleMouseLeave = () => {
-    //     setIsHovered(false);
-    // };
-
     return (
         <Slide direction="right" in={true} mountOnEnter unmountOnExit timeout={1000}>
-            {/* <div className={`vertical-navbar ${isHovered ? 'scrollable' : ''}`}
-                onMouseEnter={handleMouseEnter}
-                onMouseLeave={handleMouseLeave}> */}
             <div className="vertical-navbar">
                 <div className="profile-container">
                     <img className="profile-image" src={profileImg} alt="Contact 1" />
@@ -67,14 +54,20 @@ const VerticalNavbar = () => {
                     <Button variant="contained" sx={buttonStyle} href='#WELCOME_PAGE'>
                         Welcome
                     </Button>
-                    <Button variant="contained" sx={buttonStyle}>
+                    <Button variant="contained" sx={buttonStyle} href='#RESUME_PAGE'>
                         Resume
                     </Button>
-                    <Button variant="contained" sx={buttonStyle}>
+                    <Button variant="contained" sx={buttonStyle} href='#SKILLS_PAGE'>
+                        Skills
+                    </Button>
+                    <Button variant="contained" sx={buttonStyle} href='#PROJECTS_PAGE'>
                         Projects
                     </Button>
                     <Button variant="contained" sx={buttonStyle}>
                         Hobbies
+                    </Button>
+                    <Button variant="contained" sx={buttonStyle}>
+                        Alex GPT
                     </Button>
                     <Button variant="contained" sx={buttonStyle}>
                         Contact

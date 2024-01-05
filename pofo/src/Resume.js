@@ -16,7 +16,9 @@ const Resume = () =>{
 
     return(
         <div className='resume-content'>
-            <h1>Resume</h1>
+            <div id='RESUME_PAGE' className='Resume-Page'>
+                <h1>Resume</h1>
+            </div>
             <div className='resume-banners'>
                 <ResumeBanner image={Amazon} company={"Amazon"} position={"Software Engineer"} text={"Software development engineer on the entertainment team in Seattle, WA. If you're in the Seattle area, let me know!"}/>
                 <ResumeBanner image={Fulcrum} company={"Fulcrum"} position={"Founder"} text={"Developing a platform to reduce the computational overhead for biologists. Offers an intuitive low-code interface to access data cleaning software and complex AI algorithms for analytics and insights"}/>

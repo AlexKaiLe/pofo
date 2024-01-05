@@ -9,6 +9,7 @@
     box-shadow: 5px 0 5px rgba(0, 0, 0, 0.5);
     z-index: 1;
     overflow-y: auto;
+    direction: rtl;
 }
 
 .profile-container {
@@ -154,4 +155,9 @@ background-color: #777;
 }
 .light-dark-mode p{
     margin: 0;
+}
+@media screen and (max-width: 600px){
+    .vertical-navbar {
+       display: none;
+    }
 }

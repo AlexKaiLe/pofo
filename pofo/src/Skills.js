@@ -52,7 +52,7 @@ import solidworks from './images/skills-icons/solidworks.png'
 import google from './images/skills-icons/g-suite.png'
 import microsoft from './images/skills-icons/microsoft-suite.png'
 
-const Skills = () => {
+const Skills = ({id}) => {
     const programing_languages = [
         { imageUrl: python, description: 'Python' },
         { imageUrl: R, description: 'R Studio' },
@@ -112,7 +112,9 @@ const Skills = () => {
     ];
     return(
         <div className='skills-content'>
-            <h1>Skills</h1>
+            <div id='SKILLS_PAGE'>
+                <h1>Skills</h1>
+            </div>
             <div className='skills-banner'>
                 <SkillsBanner text="Programing Languages" data={programing_languages}/>
                 <SkillsBanner text="Programing Packages" data={programing_packages}/>

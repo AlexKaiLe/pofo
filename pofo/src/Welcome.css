@@ -1,7 +1,6 @@
 .shape{
-    /* margin: 0 2vw; */
     width: 80vw;
-    min-width: 900px;
+    min-width: 800px;
     height: 80vh;
     padding: 0;
 }
@@ -13,18 +12,22 @@
     justify-content: space-evenly;
     background-color: skyblue;
     width: 80vw;
-    min-width: 900px;
-    height: 80vh;
+    min-width: 800px;
+    height: calc(80vh - 100px);
 }
 
-.welcome-wrapper h1 {
+.Welcome-Page{
+    width: 70vw;
+}
+
+h1 {
     color: white;
     margin: 2vh 2vw;
 }
 
 .education {
     height: 15vh;
-    min-height: 75px;
+    min-height: 100px;
     width: auto;
     border-radius: 10px;
     margin: 10px;
@@ -35,15 +38,13 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    margin: 5vh 0;
 }
 
 .body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    /* height: 100px;
-    width: 100px; */
-    /* background-color: black; */
     padding: 0 2vw; /* Adjust padding as needed */
 }
 
@@ -54,7 +55,7 @@
 }
 
 .img-box {
-    height: min(30vh, 20vw);
+    height: 20vh;
     min-height: 200px;
     width: auto;
     border-radius: 10px;
@@ -76,17 +77,24 @@
     font-size: 1.2rem;
 }
 
-@media screen and (max-height: 600px){
+@media screen and (max-height: 700px){
     .shape {
-        min-width: 1200px;
+        min-width: 1400px;
     }
 
     .welcome-wrapper {
-        min-width: 1200px;
+        min-width: 1400px;
     }
 
     .text-box p {
         margin: 1vh 0;
+    }
+}
+
+@media screen and (max-height: 450px){
+
+    .text-box p {
         font-size: .75rem;
     }
 }
+
