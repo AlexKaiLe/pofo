@@ -37,6 +37,9 @@ const ImageAnimation = ({ images, isHovered, handleWheel}) => {
 
         if (horizontal){
           setIsScrollingBackwards(deltaX < 0);
+          const scrollSpeed = 2;
+          const container = document.getElementById('scroll-container');
+          container.scrollLeft += deltaX * scrollSpeed;
         } 
         if (vertical){
           setIsScrollingBackwards(deltaY < 0);

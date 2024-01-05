@@ -34,7 +34,7 @@ const VerticalNavbar = () => {
             <div className="vertical-navbar">
                 <div className="profile-container">
                     <img className="profile-image" src={profileImg} alt="Contact 1" />
-                    <h1>Alexander Le</h1>
+                    <h1>Alexander K. Le</h1>
                     <div className="contact-buttons">
                         <a href="https://www.linkedin.com/in/alexkaile/" className="btn btn-outline-light">
                                 <FontAwesomeIcon icon={['fab', 'linkedin']} className='fa-icon'/>

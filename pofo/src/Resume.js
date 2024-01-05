@@ -12,6 +12,211 @@ import NewWheel from './images/resume/new_wheel.png'
 import Volumental from './images/resume/volumental.png'
 import Fulcrum from './images/resume/fulcrum.png'
 
+const AmazonComponent = () => {
+    return (
+        <div className='banner'>
+            <div className="image-container">
+                <img src={Amazon} alt="Work Experience"/>
+                <h2>Amazon</h2>
+                <p>Software Development Engineer</p>
+            </div>
+            <div className='description'>
+                <ul>
+                    <li>Software development engineer on the entertainment team in Seattle, WA.</li>
+                    <li>If you're in the Seattle area, let me know!</li>
+                </ul>
+            </div>
+        </div>
+    );
+}
+const FulcrumComponent = () => {
+    return (
+        <div className='banner'>
+            <div className="image-container">
+                <img src={Fulcrum} alt="Work Experience"/>
+                <h2>Fulcrum Bionet</h2>
+                <p>Founder</p>
+            </div>
+            
+            <div className='description'>
+                <ul>
+                    <li>Developing a platform to reduce the computational overhead for biologists.</li>
+                    <li>Offers an intuitive low-code interface to access data cleaning software and complex AI algorithms for analytics and insights.</li>
+                </ul>
+            </div>
+        </div>
+    );
+}
+
+const InsitroComponent = () => {
+    return (
+        <div className='banner'>
+            <div className="image-container">
+                <img src={Insitro} alt="Work Experience"/>
+                <h2>Insitro</h2>
+                <p>Software Eningeering Imaging Intern</p>
+            </div>
+            
+            <div className='description'>
+                <ul>
+                    <li>Developed, validated and implemented the Differential Phase Contrast imaging algorithm that allows for dynamic modification and parallel computing.</li>
+                    <li>The new implementation reduces the image reconstruction runtime by 70%.</li>
+                </ul>
+            </div>
+        </div>
+    );
+}
+
+const CCMBComponent = () => {
+    return (
+        <div className='banner'>
+            <div className="image-container">
+                <img src={CCMB} alt="Work Experience"/>
+                <h2>Center for Computational Biology</h2>
+                <p>Deep Learning Research Assistant</p>
+            </div>
+            
+            <div className='description'>
+                <ul>
+                    <li>Developed and managed the counterfactual generation engine project deploying explainable artificial intelligence.</li>
+                    <li>The algorithm improves the interpretability of black box models for genomic data by 80%.</li>
+                </ul>
+            </div>
+        </div>
+    );
+}
+
+const BrownComponent = () => {
+    return (
+        <div className='banner'>
+            <div className="image-container">
+                <img src={Brown} alt="Work Experience"/>
+                <h2>Brown University</h2>
+                <p>CS Teaching Assistant</p>
+            </div>
+            
+            <div className='description'>
+                <ul>
+                    <li><u>Computational Linguistics:</u> Developed projects focused on natural language processing such as transformers, sentiment analysis and machine translation.</li>
+                    <li><u>Computer Vision:</u> Implemented workshops teaching feature detection, 3D image reconstruction, and convolutional neural networks.</li>
+                </ul>
+            </div>
+        </div>
+    );
+}
+
+const AlpertComponent = () => {
+    return (
+        <div className='banner'>
+            <div className="image-container">
+                <img src={alpert_med} alt="Work Experience"/>
+                <h2>Warren Alpert Medical School</h2>
+                <p>Radiology ML Research Assistant</p>
+            </div>
+            
+            <div className='description'>
+                <ul>
+                    <li>Awarded the UTRA research grant to predict the COVID mortality rate in the ICU by analyzing physician text and MRI datasets from hospitals.</li>
+                    <li>I implemented natural language processing and computer vision for multimodality</li>
+                </ul>
+            </div>
+        </div>
+    );
+}
+
+const HMSComponent = () => {
+    return (
+        <div className='banner'>
+            <div className="image-container">
+                <img src={HMS} alt="Work Experience"/>
+                <h2>Harvard University</h2>
+                <p>NSF Neuroscience Artificial Intelligence Research Assistant</p>
+            </div>
+            
+            <div className='description'>
+                <ul>
+                    <li>Analyzed correlations between neurological activity and physical behavior in rats by designing a neural network.</li>
+                    <li>Identified unmarked 3D rat joints using spatial, temporal, and behavioral data with 80% accuracy.</li>
+                </ul>
+            </div>
+        </div>
+    );
+}
+
+const UCDComponent = () => {
+    return (
+        <div className='banner'>
+            <div className="image-container">
+                <img src={UCD} alt="Work Experience"/>
+                <h2>UC Davis</h2>
+                <p>HIV & COVID Vaccine Research Assistant</p>
+            </div>
+            
+            <div className='description'>
+                <ul>
+                    <li>Determined optimal cell confluence to grow COVID vaccines, reducing laboratory resources and time by 50%.</li>
+                    <li>Analyzed antibody generation efficacy by designing plasmids, operating flow cytometry, and performing ELISA tests on COVID-infected monkeys.</li>
+                </ul>
+            </div>
+        </div>
+    );
+}
+
+const PointzComponent = () => {
+    return (
+        <div className='banner'>
+            <div className="image-container">
+                <img src={Pointz} alt="Work Experience"/>
+                <h2>Pointz</h2>
+                <p>HIV & COVID Vaccine Research Assistant</p>
+            </div>
+            
+            <div className='description'>
+                <ul>
+                    <li>Determined optimal cell confluence to grow COVID vaccines, reducing laboratory resources and time by 50%.</li>
+                    <li>Analyzed antibody generation efficacy by designing plasmids, operating flow cytometry, and performing ELISA tests on COVID-infected monkeys.</li>
+                </ul>
+            </div>
+        </div>
+    );
+}
+const NewWheelComponent = () => {
+    return (
+        <div className='banner'>
+            <div className="image-container">
+                <img src={NewWheel} alt="Work Experience"/>
+                <h2>New Wheel</h2>
+                <p>HIV & COVID Vaccine Research Assistant</p>
+            </div>
+            
+            <div className='description'>
+                <ul>
+                    <li>Determined optimal cell confluence to grow COVID vaccines, reducing laboratory resources and time by 50%.</li>
+                    <li>Analyzed antibody generation efficacy by designing plasmids, operating flow cytometry, and performing ELISA tests on COVID-infected monkeys.</li>
+                </ul>
+            </div>
+        </div>
+    );
+}
+const VolumentalComponent = () => {
+    return (
+        <div className='banner'>
+            <div className="image-container">
+                <img src={Volumental} alt="Work Experience"/>
+                <h2>Volumental</h2>
+                <p>HIV & COVID Vaccine Research Assistant</p>
+            </div>
+            
+            <div className='description'>
+                <ul>
+                    <li>Determined optimal cell confluence to grow COVID vaccines, reducing laboratory resources and time by 50%.</li>
+                    <li>Analyzed antibody generation efficacy by designing plasmids, operating flow cytometry, and performing ELISA tests on COVID-infected monkeys.</li>
+                </ul>
+            </div>
+        </div>
+    );
+}
+
 const Resume = () =>{
 
     return(
@@ -19,18 +224,20 @@ const Resume = () =>{
             <div id='RESUME_PAGE' className='Resume-Page'>
                 <h1>Resume</h1>
             </div>
-            <div className='resume-banners'>
-                <ResumeBanner image={Amazon} company={"Amazon"} position={"Software Engineer"} text={"Software development engineer on the entertainment team in Seattle, WA. If you're in the Seattle area, let me know!"}/>
-                <ResumeBanner image={Fulcrum} company={"Fulcrum"} position={"Founder"} text={"Developing a platform to reduce the computational overhead for biologists. Offers an intuitive low-code interface to access data cleaning software and complex AI algorithms for analytics and insights"}/>
-                <ResumeBanner image={Insitro} company={"Insitro"} position={"Software Eningeer Intern"} text={"Developed, validated and implemented the Differential Phase Contrast imaging algorithm that allows for dynamic modification and parallel computing. The new implementation reduces the image reconstruction runtime by 70%"}/>
-                <ResumeBanner image={CCMB} company={"Center for Computational Biology"} position={"Research Assistant"} text={"Developed and managed the counterfactual generation engine project deploying explainable artificial intelligence. The algorithm improves the interpretability of black box models for genomic data by 80%"}/>
-                <ResumeBanner image={Brown} company={"Brown University"} position={"Teaching Assistant"} text={"Computational Linguistics: Developed projects focused on natural language processing such as transformers, sentiment analysis and machine translation. Computer Vision: Implemented workshops teaching feature detection, 3D image reconstruction, and convolutional neural networks"}/>
-                <ResumeBanner image={alpert_med} company={"Alpert Medical School"} position={"Research Assistant"} text={"Awarded a research grant to predict the COVID mortality rate in the ICU by analyzing physician text and MRI datasets from hospitals. I implemented natural language processing and computer vision for multimodality"}/>
-                <ResumeBanner image={HMS} company={"Harvard University"} position={"Research Assistant"} text={"Analyzed correlations between neurological activity and physical behavior in rats by designing a neural network to identify unmarked 3D rat joints using spatial, temporal, and behavioral data with 80% accuracy"}/>
-                <ResumeBanner image={UCD} company={"UC Davis"} position={"Research Assistant"} text={"Determined optimal cell confluence to grow COVID vaccines, reducing laboratory resources and time by 50%. Analyzed antibody generation efficacy by designing plasmids, operating flow cytometry, and performing ELISA tests on COVID-infected monkeys"}/>
-                <ResumeBanner image={Pointz} company={"Pointz"} position={"Fullstack developer"} text={"I am part of the entertainment team"}/>
-                <ResumeBanner image={NewWheel} company={"New Wheel"} position={"Mechanic"} text={"I am part of the entertainment team"}/>
-                <ResumeBanner image={Volumental} company={"Volumental"} position={"Software Engineer Intern"} text={"I am part of the entertainment team"}/>
+            <div className='resume-center'>
+                <div className='resume-banners'>
+                    <ResumeBanner Component={AmazonComponent}/>
+                    <ResumeBanner Component={FulcrumComponent}/>
+                    <ResumeBanner Component={InsitroComponent}/>
+                    <ResumeBanner Component={CCMBComponent}/>
+                    <ResumeBanner Component={BrownComponent}/>
+                    <ResumeBanner Component={AlpertComponent}/>
+                    <ResumeBanner Component={HMSComponent}/>
+                    <ResumeBanner Component={UCDComponent}/>
+                    <ResumeBanner Component={PointzComponent}/>
+                    <ResumeBanner Component={NewWheelComponent}/>
+                    <ResumeBanner Component={VolumentalComponent}/>
+                </div>
             </div>
         </div>        
     );

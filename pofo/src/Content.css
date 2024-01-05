@@ -42,7 +42,7 @@
 }
 
 .content-block-2 {
-  width: 100vw;
+  width: 1000px;
   height: 100%;
   background-color: forestgreen;
   margin-right: 20px;
@@ -52,8 +52,8 @@
 .runner-container {
   position: fixed;
   bottom: 0;
-  left: max(300px, 50vw);
-  right: max(300px, 50vw);
+  left: max(500px, 55vw);
+  right: max(300px, 45vw);
   display: flex;
   justify-content: center;
   align-items: center;

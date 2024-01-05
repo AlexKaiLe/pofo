@@ -41,23 +41,35 @@ const Welcome = ({id}) => {
       </div>
       <Slide direction="up" in={isVisible} mountOnEnter unmountOnExit timeout={2000}>
         <div className="welcome-wrapper">
-
-            <div className="education-imgs">
-                <img className="education" src={brown} alt="brown"></img>
-                <img className="education" src={RISD} alt="RISD"></img>
-                <img className="education" src={haas} alt="haas"></img>
-            </div>
-          <div className="body">
+          <div className="welcome-body">
             <div className="text-box">
-                  <h3>Hello there!!!</h3>
-                    <p>My name is Alexander Le.</p>
-                    <p>Welcome to my personal website where I explore my interests in <u>software engineering</u>, <u>biology</u>, and <u>industrial design</u>. </p>
-                    <p>I have a background in Computational Biology with an emphasis on deep learning and molecular biology. However, I still keep in touch with my creative side through design and entrepreneurial ventures.</p>
-                    <p>To have the best experience, please view the website on a computer in full screen. Scroll up and down to move around!</p>
-                </div> 
-                <div className='img -format'>
-                    <img className="img-box" src={headshot} alt="Headshot"></img>
-                </div>
+              <div>
+                <h3>Hello there!!!</h3>
+                <p>My name is Alexander Le.</p>
+                <p>Welcome to my personal website where I explore my interests in <u>software engineering</u>, <u>biology</u>, and <u>industrial design</u>. </p>
+                <p>I have a background in Computational Biology with an emphasis on deep learning and molecular biology. However, I still keep in touch with my creative side through design and entrepreneurial ventures.</p>
+                <p>To have the best experience, please view the website on a computer in full screen. Scroll up and down to move around!</p>
+              </div>
+            </div> 
+            <div className='img-format'>
+                <img className="img-box" src={headshot} alt="Headshot"></img>
+            </div>
+          </div>
+          <div className="education-imgs">
+            <div className='education-box'>
+              <img className="education" src={brown} alt="brown"></img>
+              <p>Brown University</p>
+            </div>
+            <div className='education-box'>
+              <img className="education" src={RISD} alt="RISD"></img>
+              <p>Rhode Island</p>
+              <p>School of Design</p>
+            </div>
+            <div className='education-box'>
+              <img className="education" src={haas} alt="haas"></img>
+              <p>UC Berkley Haas</p>
+              <p>School of Business</p>
+            </div>
           </div>
         </div>
       </Slide>

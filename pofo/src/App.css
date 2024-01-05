@@ -4,6 +4,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   background-color: antiquewhite;
   font-size: 16px;
+  overscroll-behavior: none;
 }
 
 .wrapper {

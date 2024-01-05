@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import './Resume.css';
 import Slide from '@mui/material/Slide';
 
-const ResumeBanner = ({ image, company, position, text }) => {
+const ResumeBanner = ({Component}) => {
   const [isVisible, setIsVisible] = useState(false);
   const targetRef = useRef(null);
 
@@ -29,21 +29,11 @@ const ResumeBanner = ({ image, company, position, text }) => {
     return () => observer.disconnect();
   }, []);
 
-  // Split the text along periods and create an array of bulleted list items
-  const textPoints = text.split('.').map((point, index) => (
-    <li key={index}>{point.trim()}</li>
-  ));
-
   return (
     <div ref={targetRef} className='banner-container'>
       <Slide direction="up" in={isVisible} mountOnEnter timeout={1300}>
-        <div className="banner">
-          <div className="image-container">
-            <img src={image} alt="Work Experience" />
-            <h2>{company}</h2>
-            <p><b>{position}</b></p>
-          </div>
-          <ul>{textPoints}</ul>
+        <div>
+          <Component/>
         </div>
       </Slide>
     </div>

@@ -34,10 +34,16 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    background-color: whitesmoke;
+    background-color: white;
     padding: 2vh 2vw;
     border-radius: 10px;
 }
+
+.skills-box:hover {
+    transition: box-shadow 0.5s ease-in-out;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8);
+}
+
 .skills-list{
     text-align: left;
     display: flex;

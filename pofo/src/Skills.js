@@ -52,73 +52,88 @@ import solidworks from './images/skills-icons/solidworks.png'
 import google from './images/skills-icons/g-suite.png'
 import microsoft from './images/skills-icons/microsoft-suite.png'
 
-const Skills = ({id}) => {
-    const programing_languages = [
-        { imageUrl: python, description: 'Python' },
-        { imageUrl: R, description: 'R Studio' },
-        { imageUrl: java, description: 'Java' },
-        { imageUrl: javascript, description: 'Javascript' },
-        { imageUrl: golang, description: 'Golang' },
-        { imageUrl: matlab, description: 'MATLAB' },
-        { imageUrl: React_logo, description: 'React' },
-        { imageUrl: SQL, description: 'SQL' },
-        { imageUrl: HTML, description: 'HTML' },
-        { imageUrl: CSS, description: 'CSS' }
-    ];
+const programing_languages = [
+    { imageUrl: python, description: 'Python' },
+    { imageUrl: R, description: 'R Studio' },
+    { imageUrl: java, description: 'Java' },
+    { imageUrl: javascript, description: 'Javascript' },
+    { imageUrl: golang, description: 'Golang' },
+    { imageUrl: matlab, description: 'MATLAB' },
+    { imageUrl: React_logo, description: 'React' },
+    { imageUrl: SQL, description: 'SQL' },
+    { imageUrl: HTML, description: 'HTML' },
+    { imageUrl: CSS, description: 'CSS' }
+];
 
-    const programing_packages = [
-        { imageUrl: AWS, description: 'Amazon Web Services' },
-        { imageUrl: GCP, description: 'Google Cloud Computing' },
-        { imageUrl: docker, description: 'Docker' },
-        { imageUrl: django, description: 'django' },
-        { imageUrl: JAX, description: 'JAX' },
-        { imageUrl: git, description: 'git' },
-        { imageUrl: Keras, description: 'Keras' },
-        { imageUrl: NodeJS, description: 'NodeJS' },
-        { imageUrl: Numpy, description: 'Numpy' },
-        { imageUrl: Pytorch, description: 'Pytorch' },
-        { imageUrl: Ray, description: 'Ray' },
-        { imageUrl: scikit, description: 'scikit' },
-        { imageUrl: tensorflow, description: 'tensorflow' },
-        { imageUrl: SQlite, description: 'SQlite' },
-        { imageUrl: pandas, description: 'pandas' },
-        { imageUrl: opencv, description: 'opencv' },
-        { imageUrl: spacy, description: 'spacy' },
-        { imageUrl: mongodb, description: 'mongodb' },
-        { imageUrl: flask, description: 'flask' },
-        { imageUrl: postgresql, description: 'postgresql' },
-        { imageUrl: mysql, description: 'mysql' },
-        { imageUrl: seaborn, description: 'seaborn' },
-        { imageUrl: NLTK, description: 'NLTK' },
-        { imageUrl: bokeh, description: 'bokeh' },
-    ];
+const programing_packages = [
+    { imageUrl: AWS, description: 'Amazon Web Services' },
+    { imageUrl: GCP, description: 'Google Cloud Computing' },
+    { imageUrl: docker, description: 'Docker' },
+    { imageUrl: django, description: 'django' },
+    { imageUrl: JAX, description: 'JAX' },
+    { imageUrl: git, description: 'git' },
+    { imageUrl: Keras, description: 'Keras' },
+    { imageUrl: NodeJS, description: 'NodeJS' },
+    { imageUrl: Numpy, description: 'Numpy' },
+    { imageUrl: Pytorch, description: 'Pytorch' },
+    { imageUrl: Ray, description: 'Ray' },
+    { imageUrl: scikit, description: 'scikit' },
+    { imageUrl: tensorflow, description: 'tensorflow' },
+    { imageUrl: SQlite, description: 'SQlite' },
+    { imageUrl: pandas, description: 'pandas' },
+    { imageUrl: opencv, description: 'opencv' },
+    { imageUrl: spacy, description: 'spacy' },
+    { imageUrl: mongodb, description: 'mongodb' },
+    { imageUrl: flask, description: 'flask' },
+    { imageUrl: postgresql, description: 'postgresql' },
+    { imageUrl: mysql, description: 'mysql' },
+    { imageUrl: seaborn, description: 'seaborn' },
+    { imageUrl: NLTK, description: 'NLTK' },
+    { imageUrl: bokeh, description: 'bokeh' },
+];
 
-    const prject_management = [
-        { imageUrl: figma, description: 'figma' },
-        { imageUrl: balsamiq, description: 'balsamiq' },
-        { imageUrl: slack, description: 'slack' },
-        { imageUrl: miro, description: 'miro' },
-        { imageUrl: trello, description: 'trello' },
-        { imageUrl: confluence, description: 'confluence' },
-        { imageUrl: monday, description: 'monday' },
-        { imageUrl: jira, description: 'jira' },
-        { imageUrl: notion, description: 'notion' },
-        { imageUrl: zapier, description: 'zapier' },
-        { imageUrl: adobe, description: 'adobe' },
-        { imageUrl: autodesk, description: 'autodesk' },
-        { imageUrl: solidworks, description: 'solidworks' },
-        { imageUrl: google, description: 'google' },
-        { imageUrl: microsoft, description: 'microsoft' },
-    ];
+const prject_management = [
+    { imageUrl: figma, description: 'figma' },
+    { imageUrl: balsamiq, description: 'balsamiq' },
+    { imageUrl: slack, description: 'slack' },
+    { imageUrl: miro, description: 'miro' },
+    { imageUrl: trello, description: 'trello' },
+    { imageUrl: confluence, description: 'confluence' },
+    { imageUrl: monday, description: 'monday' },
+    { imageUrl: jira, description: 'jira' },
+    { imageUrl: notion, description: 'notion' },
+    { imageUrl: zapier, description: 'zapier' },
+    { imageUrl: adobe, description: 'adobe' },
+    { imageUrl: autodesk, description: 'autodesk' },
+    { imageUrl: solidworks, description: 'solidworks' },
+    { imageUrl: google, description: 'google' },
+    { imageUrl: microsoft, description: 'microsoft' },
+];
+
+const Component = ({data}) => {
+    return (<div className='skills-box'>
+        {data && data.map((item, index) => (
+            <div className='skills' key={index}>
+                <img className='skills-img' src={item.imageUrl} alt={`${index + 1}`} />
+                <p>{item.description}</p>
+            </div>
+            ))}
+    </div>);
+}
+
+const Skills = () => {
+
     return(
         <div className='skills-content'>
             <div id='SKILLS_PAGE'>
                 <h1>Skills</h1>
             </div>
             <div className='skills-banner'>
-                <SkillsBanner text="Programing Languages" data={programing_languages}/>
-                <SkillsBanner text="Programing Packages" data={programing_packages}/>
-                <SkillsBanner text="Project Management & Design" data={prject_management}/>
+                <SkillsBanner text="Programing Languages" Component={() => <Component data={programing_languages} />}/>
+                <SkillsBanner text="Programing Packages" Component={() => <Component data={programing_packages} />}/>
+                <SkillsBanner text="Project Management & Design" Component={() => <Component data={prject_management} />}/>
+                {/* <SkillsBanner text="Programing Packages" data={programing_packages}/>
+                <SkillsBanner text="Project Management & Design" data={prject_management}/> */}
             </div>
         </div>
     );

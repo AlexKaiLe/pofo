@@ -95,17 +95,14 @@ const Content = () => {
             <Welcome/>
             <Resume/>
             <Skills/>
-            <Projects isHovered={isHovered} setIsHovered={setIsHovered}/>
+            <Projects setIsHovered={setIsHovered}/>
             {/* <div className="content-block-1"></div> */}
           </div>
-          
-          
           <div className="landscape" ref={scrollingDivRef}>
             <div className="content-block-2"></div>
             <div className="content-block-2"></div>
             <div className="content-block-2"></div>
             <div className="content-block-2"></div>
-            {/* <div className="content-block-2"></div> */}
           </div>
         </div>
       </div>
