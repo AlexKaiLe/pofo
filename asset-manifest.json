@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/pofo/static/css/main.2faf1f8f.css",
-    "main.js": "/pofo/static/js/main.384b490c.js",
+    "main.css": "/pofo/static/css/main.4ad46306.css",
+    "main.js": "/pofo/static/js/main.0ce48719.js",
     "static/js/787.06cfae14.chunk.js": "/pofo/static/js/787.06cfae14.chunk.js",
     "static/media/profile_grad.jpg": "/pofo/static/media/profile_grad.b2025801aea4e0a0b5bd.jpg",
     "static/media/headshot.JPG": "/pofo/static/media/headshot.703655374eedd6ed13ae.JPG",
@@ -79,12 +79,12 @@
     "static/media/Keras.png": "/pofo/static/media/Keras.50b636f01e50d9f2d513.png",
     "static/media/Pointz.png": "/pofo/static/media/Pointz.a0f7e52f21fe8aa50188.png",
     "index.html": "/pofo/index.html",
-    "main.2faf1f8f.css.map": "/pofo/static/css/main.2faf1f8f.css.map",
-    "main.384b490c.js.map": "/pofo/static/js/main.384b490c.js.map",
+    "main.4ad46306.css.map": "/pofo/static/css/main.4ad46306.css.map",
+    "main.0ce48719.js.map": "/pofo/static/js/main.0ce48719.js.map",
     "787.06cfae14.chunk.js.map": "/pofo/static/js/787.06cfae14.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2faf1f8f.css",
-    "static/js/main.384b490c.js"
+    "static/css/main.4ad46306.css",
+    "static/js/main.0ce48719.js"
   ]
 }
