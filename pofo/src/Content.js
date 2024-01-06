@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
 import './Content.css';
+
 import runner_1 from './images/runner/1.png'; 
 import runner_2 from './images/runner/2.png'; 
 import runner_3 from './images/runner/3.png'; 
@@ -32,6 +33,7 @@ import Welcome from './Welcome';
 import Resume from './Resume';
 import Skills from './Skills';
 import Projects from './Projects';
+import Contact from './Contact'
 
 const runner_images = [runner_1, runner_2, runner_3, runner_4, runner_5, runner_6, runner_7];
 const axolotl_images = [axol_1, axol_2, axol_3, axol_4, axol_5, axol_6, axol_7, axol_8, axol_9, axol_10, axol_11, axol_12, axol_13, axol_14, axol_15, axol_16, axol_17, axol_18];
@@ -96,9 +98,15 @@ const Content = () => {
             <Resume/>
             <Skills/>
             <Projects setIsHovered={setIsHovered}/>
+            <Contact/>
             {/* <div className="content-block-1"></div> */}
           </div>
           <div className="landscape" ref={scrollingDivRef}>
+            <div className="content-block-2"></div>
+            <div className="content-block-2"></div>
+            <div className="content-block-2"></div>
+            <div className="content-block-2"></div>
+            <div className="content-block-2"></div>
             <div className="content-block-2"></div>
             <div className="content-block-2"></div>
             <div className="content-block-2"></div>

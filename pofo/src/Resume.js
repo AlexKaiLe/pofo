@@ -1,4 +1,6 @@
 import './Resume.css'
+import Button from '@mui/material/Button';
+
 import ResumeBanner from './ResumeBanner'
 import Amazon from './images/resume/amazon.png'
 import Insitro from './images/resume/insitro.png'
@@ -11,6 +13,7 @@ import Pointz from './images/resume/Pointz.png'
 import NewWheel from './images/resume/new_wheel.png'
 import Volumental from './images/resume/volumental.png'
 import Fulcrum from './images/resume/fulcrum.png'
+import ResumePDF from './images/resume/Alexander_Le_Resume.pdf';
 
 const AmazonComponent = () => {
     return (
@@ -217,6 +220,45 @@ const VolumentalComponent = () => {
     );
 }
 
+const buttonStyle = {
+    border: 'none',
+    margin: '5px 0',
+    cursor: 'pointer',
+    borderRadius: '5px',
+    textTransform: 'none',
+    '&:hover': {
+    },
+  };
+
+const ResumeComponent = () => {
+    const pdfViewerLink = ResumePDF; // Replace this with the appropriate PDF viewer link
+
+    const handleViewPDF = () => {
+      window.open(pdfViewerLink, '_blank');
+    };
+  
+    const handleDownloadPDF = () => {
+      window.location.href = ResumePDF; // Directly trigger the download
+    };
+    return (
+        <div className='download-resume'>
+            <iframe
+                title="PDF Preview"
+                className='pdf-iframe'
+                src={ResumePDF}
+            ></iframe>
+            <div className='resume-container'>
+                <Button variant="contained" sx={buttonStyle} onClick={handleViewPDF}>
+                    View Resume
+                </Button>
+                <Button variant="contained" sx={buttonStyle} onClick={handleDownloadPDF}>
+                    Download Resume
+                </Button>
+            </div>
+        </div>
+    );
+}
+
 const Resume = () =>{
 
     return(
@@ -226,17 +268,18 @@ const Resume = () =>{
             </div>
             <div className='resume-center'>
                 <div className='resume-banners'>
-                    <ResumeBanner Component={AmazonComponent}/>
-                    <ResumeBanner Component={FulcrumComponent}/>
-                    <ResumeBanner Component={InsitroComponent}/>
-                    <ResumeBanner Component={CCMBComponent}/>
-                    <ResumeBanner Component={BrownComponent}/>
-                    <ResumeBanner Component={AlpertComponent}/>
-                    <ResumeBanner Component={HMSComponent}/>
-                    <ResumeBanner Component={UCDComponent}/>
-                    <ResumeBanner Component={PointzComponent}/>
-                    <ResumeBanner Component={NewWheelComponent}/>
-                    <ResumeBanner Component={VolumentalComponent}/>
+                    <ResumeBanner Component={AmazonComponent} BannerStyle='banner-container'/>
+                    <ResumeBanner Component={FulcrumComponent} BannerStyle='banner-container'/>
+                    <ResumeBanner Component={InsitroComponent} BannerStyle='banner-container'/>
+                    <ResumeBanner Component={CCMBComponent} BannerStyle='banner-container'/>
+                    <ResumeBanner Component={BrownComponent} BannerStyle='banner-container'/>
+                    <ResumeBanner Component={AlpertComponent} BannerStyle='banner-container'/>
+                    <ResumeBanner Component={HMSComponent} BannerStyle='banner-container'/>
+                    <ResumeBanner Component={UCDComponent} BannerStyle='banner-container'/>
+                    <ResumeBanner Component={PointzComponent} BannerStyle='banner-container'/>
+                    <ResumeBanner Component={NewWheelComponent} BannerStyle='banner-container'/>
+                    <ResumeBanner Component={VolumentalComponent} BannerStyle='banner-container'/>
+                    <ResumeBanner Component={ResumeComponent} BannerStyle='banner-container-resume'/>
                 </div>
             </div>
         </div>        

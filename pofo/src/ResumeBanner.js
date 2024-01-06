@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import './Resume.css';
 import Slide from '@mui/material/Slide';
 
-const ResumeBanner = ({Component}) => {
+const ResumeBanner = ({Component, BannerStyle}) => {
   const [isVisible, setIsVisible] = useState(false);
   const targetRef = useRef(null);
 
@@ -30,7 +30,7 @@ const ResumeBanner = ({Component}) => {
   }, []);
 
   return (
-    <div ref={targetRef} className='banner-container'>
+    <div ref={targetRef} className={BannerStyle}>
       <Slide direction="up" in={isVisible} mountOnEnter timeout={1300}>
         <div>
           <Component/>

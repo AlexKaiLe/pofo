@@ -7,6 +7,10 @@
   flex-direction: column;
 }
 
+.projects-page{
+  width: 80vw;
+}
+
 .popup {
   position: fixed;
   top: 0;
@@ -77,16 +81,35 @@
   overflow: auto;
 }
 
-/* Close button */
 .close-btn {
+  float: right;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  opacity: .5; 
   cursor: pointer;
-  font-size: 20px;
-  color: #555;
+}
+.close-btn:hover {
+  color: #000;
+  text-decoration: none; }
+.close-btn:not(:disabled):not(.disabled):hover, .close:not(:disabled):not(.disabled):focus {
+  opacity: .75; 
 }
 
-/* Popup body with scrolling */
 .popup-body {
-  /* Remove max-height from popup-body, let it inherit from popup-content */
   overflow-y: auto;
 }
 
+@media screen and (max-height: 550px){
+  .projects-content{
+      width: 3000px;
+  }
+  .popup-button{
+    margin: 2vh 2vw;
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+  }
+}

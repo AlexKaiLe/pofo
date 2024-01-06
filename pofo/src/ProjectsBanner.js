@@ -1,5 +1,8 @@
 import React from 'react';
-// import Button from '@mui/material/Button';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faX } from '@fortawesome/free-solid-svg-icons';
+import Button from '@mui/material/Button';
+
 import './Projects.css';
 
 const ProjectsBanner = ({Component, isPopupOpen, togglePopup, handleMouseEnter, handleMouseLeave}) => {
@@ -12,10 +15,12 @@ const ProjectsBanner = ({Component, isPopupOpen, togglePopup, handleMouseEnter, 
           <div className='popup-block'></div>
           <div className="popup-content">
             <div className="popup-header">
-              <span onClick={togglePopup} className="close-btn"> &times;</span>
+              <span onClick={togglePopup} className="close-btn"> <FontAwesomeIcon icon={faX} /></span>
             </div>
             <Component/>
-            <span onClick={togglePopup} className="close-btn"> &times;</span>
+            <div>
+              <Button variant='contained' onClick={togglePopup}>Close</Button>
+            </div>
           </div>
         </div>
       )}

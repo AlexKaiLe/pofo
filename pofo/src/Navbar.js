@@ -63,13 +63,10 @@ const VerticalNavbar = () => {
                     <Button variant="contained" sx={buttonStyle} href='#PROJECTS_PAGE'>
                         Projects
                     </Button>
-                    <Button variant="contained" sx={buttonStyle}>
-                        Hobbies
-                    </Button>
-                    <Button variant="contained" sx={buttonStyle}>
+                    {/* <Button variant="contained" sx={buttonStyle}>
                         Alex GPT
-                    </Button>
-                    <Button variant="contained" sx={buttonStyle}>
+                    </Button> */}
+                    <Button variant="contained" sx={buttonStyle} href='#CONTACT_PAGE'>
                         Contact
                     </Button>
                 </div>

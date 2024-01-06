@@ -125,7 +125,7 @@ const Skills = () => {
 
     return(
         <div className='skills-content'>
-            <div id='SKILLS_PAGE'>
+            <div id='SKILLS_PAGE' className='skills-page'>
                 <h1>Skills</h1>
             </div>
             <div className='skills-banner'>

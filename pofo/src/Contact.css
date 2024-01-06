@@ -1,0 +1,92 @@
+
+.contact-content{
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    height: 80vh;
+}
+
+.contact-page{
+    width: 80vw;
+}
+
+.contact-container {
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slide-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+}
+.contact-socials{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 50vw;
+    justify-content: center;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 40vw;
+    height: 450px;
+}
+
+.contact-spacing {
+    margin: 1vh 0 0 0;
+}
+
+.contact-input {
+    padding: 10px;
+}
+.contact-elements{
+    display: flex;
+    flex-direction: column;
+    margin: 0 2vw;
+}
+.textarea {
+    padding: 10;
+    height: 20vh;
+}
+
+.email-button {
+    background-color: #048707;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin: 2vh 0;
+}
+  
+@media screen and (max-height: 700px){
+    .slide-container{
+        width: 1200px;
+    }
+    .contact-container {
+       width: auto;
+    }
+    .contact-form {
+        height: 400px;
+     }
+    /* .contact-content{
+        height: 60vh;
+    } */
+}
+
+@media screen and (max-height: 600px){
+    .slide-container{
+        height: 50vh;
+        width: 1500px;
+    }
+    .contact-form {
+       width: 800px;
+       height: 200px;
+    }
+}
