@@ -10,7 +10,6 @@
     flex-wrap: wrap;
     flex-direction: column-reverse;
     justify-content: center;
-    background-color: skyblue;
     width: 80vw;
     min-width: 800px;
     height: calc(80vh - 100px);

@@ -28,6 +28,9 @@ import axol_16 from './images/axolotl/16.png';
 import axol_17 from './images/axolotl/17.png'; 
 import axol_18 from './images/axolotl/18.png'; 
 
+import san_fran from './images/skyline/san_francisco.png'; 
+
+
 import Runner from './Runner';
 import Welcome from './Welcome';
 import Resume from './Resume';
@@ -102,6 +105,13 @@ const Content = () => {
             {/* <div className="content-block-1"></div> */}
           </div>
           <div className="landscape" ref={scrollingDivRef}>
+            <img className='content-block-2' src={san_fran} alt='san_fran'></img>
+            <img className='content-block-2' src={san_fran} alt='san_fran'></img>
+            <img className='content-block-2' src={san_fran} alt='san_fran'></img>
+            <img className='content-block-2' src={san_fran} alt='san_fran'></img>
+            <img className='content-block-2' src={san_fran} alt='san_fran'></img>
+            <img className='content-block-2' src={san_fran} alt='san_fran'></img>
+            {/* <div className="content-block-2"></div>
             <div className="content-block-2"></div>
             <div className="content-block-2"></div>
             <div className="content-block-2"></div>
@@ -109,8 +119,7 @@ const Content = () => {
             <div className="content-block-2"></div>
             <div className="content-block-2"></div>
             <div className="content-block-2"></div>
-            <div className="content-block-2"></div>
-            <div className="content-block-2"></div>
+            <div className="content-block-2"></div> */}
           </div>
         </div>
       </div>

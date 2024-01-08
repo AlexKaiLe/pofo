@@ -89,32 +89,7 @@ const ContactForm = () => {
         <div ref={targetRef}>
             <Slide direction="up" in={isVisible} mountOnEnter timeout={1300}>
                 <div className='slide-container'>
-                    <div className='contact-socials'>
-                        <Button variant='contained' sx={socialButton}>
-                            <FontAwesomeIcon icon={faLinkedin} style={iconStyle}/>Linkedin
-                        </Button>
-                        <Button variant='contained' sx={socialButton} >
-                            <FontAwesomeIcon icon={faGithub} style={iconStyle}/>Github
-                        </Button>
-                        <Button variant='contained' sx={socialButton}>
-                            <FontAwesomeIcon icon={faEnvelope} style={iconStyle}/>Email
-                        </Button>
-                        <Button variant='contained' sx={socialButton}>
-                            <FontAwesomeIcon icon={faFilePdf} style={iconStyle}/>Resume
-                        </Button>
-                        <Button variant='contained' sx={socialButton}>
-                            <FontAwesomeIcon icon={faFacebook} style={iconStyle}/>Facebook
-                        </Button>
-                        <Button variant='contained' sx={socialButton}>
-                            <FontAwesomeIcon icon={faInstagram} style={iconStyle}/> Instagram
-                        </Button>
-                        <Button variant='contained' sx={socialButton}>
-                            <FontAwesomeIcon icon={faTwitter} style={iconStyle}/> Twitter
-                        </Button>
-                        <Button variant='contained' sx={socialButton}>
-                            <FontAwesomeIcon icon={faStrava} style={iconStyle}/> Strava
-                        </Button>
-                    </div>
+                    
                     <div className="contact-container">
                         <form onSubmit={sendEmail} className="contact-form">
                             <div className='contact-elements'>
@@ -135,6 +110,34 @@ const ContactForm = () => {
 
                             
                         </form>
+                    </div>
+                    <div className='center-socials'>
+                        <div className='contact-socials'>
+                            <Button variant='contained' sx={socialButton}>
+                                <FontAwesomeIcon icon={faLinkedin} style={iconStyle}/>Linkedin
+                            </Button>
+                            <Button variant='contained' sx={socialButton} >
+                                <FontAwesomeIcon icon={faGithub} style={iconStyle}/>Github
+                            </Button>
+                            <Button variant='contained' sx={socialButton}>
+                                <FontAwesomeIcon icon={faEnvelope} style={iconStyle}/>Email
+                            </Button>
+                            <Button variant='contained' sx={socialButton}>
+                                <FontAwesomeIcon icon={faFilePdf} style={iconStyle}/>Resume
+                            </Button>
+                            <Button variant='contained' sx={socialButton}>
+                                <FontAwesomeIcon icon={faFacebook} style={iconStyle}/>Facebook
+                            </Button>
+                            <Button variant='contained' sx={socialButton}>
+                                <FontAwesomeIcon icon={faInstagram} style={iconStyle}/> Instagram
+                            </Button>
+                            <Button variant='contained' sx={socialButton}>
+                                <FontAwesomeIcon icon={faTwitter} style={iconStyle}/> Twitter
+                            </Button>
+                            <Button variant='contained' sx={socialButton}>
+                                <FontAwesomeIcon icon={faStrava} style={iconStyle}/> Strava
+                            </Button>
+                        </div>
                     </div>
                 </div>
             </Slide>

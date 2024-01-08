@@ -24,6 +24,7 @@ const AmazonComponent = () => {
                 <p>Software Development Engineer</p>
             </div>
             <div className='description'>
+                <p><u>Jan 2024 - Present</u></p>
                 <ul>
                     <li>Software development engineer on the entertainment team in Seattle, WA.</li>
                     <li>If you're in the Seattle area, let me know!</li>
@@ -42,6 +43,7 @@ const FulcrumComponent = () => {
             </div>
             
             <div className='description'>
+                <p><u>Jan 2024 - Present</u></p>
                 <ul>
                     <li>Developing a platform to reduce the computational overhead for biologists.</li>
                     <li>Offers an intuitive low-code interface to access data cleaning software and complex AI algorithms for analytics and insights.</li>
@@ -61,6 +63,7 @@ const InsitroComponent = () => {
             </div>
             
             <div className='description'>
+                <p><u>Jan 2024 - Present</u></p>
                 <ul>
                     <li>Developed, validated and implemented the Differential Phase Contrast imaging algorithm that allows for dynamic modification and parallel computing.</li>
                     <li>The new implementation reduces the image reconstruction runtime by 70%.</li>
@@ -80,6 +83,7 @@ const CCMBComponent = () => {
             </div>
             
             <div className='description'>
+                <p><u>Jan 2024 - Present</u></p>
                 <ul>
                     <li>Developed and managed the counterfactual generation engine project deploying explainable artificial intelligence.</li>
                     <li>The algorithm improves the interpretability of black box models for genomic data by 80%.</li>
@@ -99,9 +103,10 @@ const BrownComponent = () => {
             </div>
             
             <div className='description'>
+                <p><u>Jan 2024 - Present</u></p>
                 <ul>
-                    <li><u>Computational Linguistics:</u> Developed projects focused on natural language processing such as transformers, sentiment analysis and machine translation.</li>
-                    <li><u>Computer Vision:</u> Implemented workshops teaching feature detection, 3D image reconstruction, and convolutional neural networks.</li>
+                    <li><b>Computational Linguistics:</b> Developed projects focused on natural language processing such as transformers, sentiment analysis and machine translation.</li>
+                    <li><b>Computer Vision:</b> Implemented workshops teaching feature detection, 3D image reconstruction, and convolutional neural networks.</li>
                 </ul>
             </div>
         </div>
@@ -118,6 +123,7 @@ const AlpertComponent = () => {
             </div>
             
             <div className='description'>
+                <p><u>Jan 2024 - Present</u></p>
                 <ul>
                     <li>Awarded the UTRA research grant to predict the COVID mortality rate in the ICU by analyzing physician text and MRI datasets from hospitals.</li>
                     <li>I implemented natural language processing and computer vision for multimodality</li>
@@ -137,6 +143,7 @@ const HMSComponent = () => {
             </div>
             
             <div className='description'>
+                <p><u>Jan 2024 - Present</u></p>
                 <ul>
                     <li>Analyzed correlations between neurological activity and physical behavior in rats by designing a neural network.</li>
                     <li>Identified unmarked 3D rat joints using spatial, temporal, and behavioral data with 80% accuracy.</li>
@@ -156,6 +163,7 @@ const UCDComponent = () => {
             </div>
             
             <div className='description'>
+                <p><u>Jan 2024 - Present</u></p>
                 <ul>
                     <li>Determined optimal cell confluence to grow COVID vaccines, reducing laboratory resources and time by 50%.</li>
                     <li>Analyzed antibody generation efficacy by designing plasmids, operating flow cytometry, and performing ELISA tests on COVID-infected monkeys.</li>
@@ -175,6 +183,7 @@ const PointzComponent = () => {
             </div>
             
             <div className='description'>
+                <p><u>Jan 2024 - Present</u></p>
                 <ul>
                     <li>Determined optimal cell confluence to grow COVID vaccines, reducing laboratory resources and time by 50%.</li>
                     <li>Analyzed antibody generation efficacy by designing plasmids, operating flow cytometry, and performing ELISA tests on COVID-infected monkeys.</li>
@@ -193,6 +202,7 @@ const NewWheelComponent = () => {
             </div>
             
             <div className='description'>
+                <p><u>Jan 2024 - Present</u></p>
                 <ul>
                     <li>Determined optimal cell confluence to grow COVID vaccines, reducing laboratory resources and time by 50%.</li>
                     <li>Analyzed antibody generation efficacy by designing plasmids, operating flow cytometry, and performing ELISA tests on COVID-infected monkeys.</li>
@@ -211,6 +221,7 @@ const VolumentalComponent = () => {
             </div>
             
             <div className='description'>
+                <p><u>Jan 2024 - Present</u></p>
                 <ul>
                     <li>Determined optimal cell confluence to grow COVID vaccines, reducing laboratory resources and time by 50%.</li>
                     <li>Analyzed antibody generation efficacy by designing plasmids, operating flow cytometry, and performing ELISA tests on COVID-infected monkeys.</li>

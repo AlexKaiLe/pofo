@@ -4,9 +4,8 @@ import profileImg from './images/education/profile_grad.jpg';
 import Resume from './images/resume/Alexander_Le_Resume.pdf';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFilePdf } from '@fortawesome/free-solid-svg-icons';
-import Button from '@mui/material/Button';
-import Switch from '@mui/material/Switch';
-import Slide from '@mui/material/Slide';
+import { Button, Slide, CssBaseline, Switch, Container, Typography, Paper } from '@mui/material';
+
 
 
 const buttonStyle = {
@@ -28,7 +27,7 @@ const toggleStyle = {
     cursor: 'pointer'
   };
 
-const VerticalNavbar = () => {
+const VerticalNavbar = ({darkMode, setDarkMode, handleThemeChange}) => {
     return (
         <Slide direction="right" in={true} mountOnEnter unmountOnExit timeout={1000}>
             <div className="vertical-navbar">
@@ -72,8 +71,18 @@ const VerticalNavbar = () => {
                 </div>
                 
                 <div className="light-dark-mode">
-                    <p>Light/Dark Mode</p>
-                    <Switch sx={toggleStyle} defaultChecked />
+                    <Typography variant="body1">
+                        {darkMode ? 'Dark Mode' : 'Light Mode'}
+                    </Typography>
+                    {/* <p>Light/Dark Mode</p> */}
+                    {/* <Switch sx={toggleStyle} defaultChecked /> */}
+                    <Switch
+                        checked={darkMode}
+                        onChange={handleThemeChange}
+                        color="primary"
+                        name="themeSwitch"
+                        sx={toggleStyle}
+                    />
                 </div>
             </div>
         </Slide>

@@ -29,8 +29,7 @@
 }
 
 .button-container{
-  height: calc(80vh - 100px);
-  /* width: auto; */
+  height: 60vh;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -102,14 +101,19 @@
   overflow-y: auto;
 }
 
+.popup-button img{
+  width: auto;
+  height: 80%;
+}
+
 @media screen and (max-height: 550px){
   .projects-content{
       width: 3000px;
   }
   .popup-button{
     margin: 2vh 2vw;
-    width: 150px;
-    height: 150px;
+    /* width: 150px; */
+    height: 100px;
     background-color: blue;
   }
 }
