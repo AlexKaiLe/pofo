@@ -4,7 +4,6 @@ import Slide from '@mui/material/Slide';
 import Button from '@mui/material/Button';
 import ProjectsBanner from './ProjectsBanner'
 
-
 import RISD from './images/education/RISD.png'
 
 

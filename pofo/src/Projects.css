@@ -52,6 +52,7 @@
   max-height: 80%; /* Set max height to 80% of the screen */
   overflow-y: auto; /* Enable scrolling if content overflows */
   margin: 5vw;
+  z-index: 100;
 }
 .popup-content::-webkit-scrollbar {
   width: 8px; 
@@ -104,6 +105,11 @@
 .popup-button img{
   width: auto;
   height: 80%;
+}
+
+.temp{
+  display: flex;
+  justify-content: right;
 }
 
 @media screen and (max-height: 550px){

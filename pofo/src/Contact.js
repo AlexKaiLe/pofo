@@ -17,6 +17,7 @@ const socialButton = {
     cursor: 'pointer',
     borderRadius: '5px',
     textTransform: 'none',
+    zIndex: '1',
     '&:hover': {
     },
 };
@@ -28,6 +29,7 @@ const emailButton = {
     textTransform: 'none',
     backgroundColor: '#4CAF50',
     margin: '2vh 0 0 0',
+    zIndex: '1',
     '&:hover': {
         backgroundColor: '#048707'
     },
