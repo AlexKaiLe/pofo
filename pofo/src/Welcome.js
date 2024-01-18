@@ -39,7 +39,7 @@ const Welcome = ({id}) => {
       <div id='WELCOME_PAGE' className='Welcome-Page'>
           <h1>Welcome</h1>
       </div>
-      <Slide direction="up" in={isVisible} mountOnEnter unmountOnExit timeout={2000}>
+      <Slide direction="down" in={isVisible} mountOnEnter unmountOnExit timeout={2000}>
         <div className="welcome-wrapper">
           <div className="welcome-body">
             <div className="text-box">

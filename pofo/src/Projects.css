@@ -103,8 +103,8 @@
 }
 
 .popup-button img{
-  width: auto;
-  height: 80%;
+  width: 100px;
+  height: 100px;
 }
 
 .temp{
@@ -112,14 +112,16 @@
   justify-content: right;
 }
 
-@media screen and (max-height: 550px){
+@media screen and (max-height: 780px){
+
   .projects-content{
-      width: 3000px;
+    width: 3000px;
   }
+}
+/* @media screen and (max-height: 550px){
   .popup-button{
     margin: 2vh 2vw;
-    /* width: 150px; */
     height: 100px;
     background-color: blue;
   }
-}
+} */

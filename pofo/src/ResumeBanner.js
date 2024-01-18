@@ -31,7 +31,7 @@ const ResumeBanner = ({Component, BannerStyle}) => {
 
   return (
     <div ref={targetRef} className={BannerStyle}>
-      <Slide direction="up" in={isVisible} mountOnEnter timeout={1300}>
+      <Slide direction="down" in={isVisible} mountOnEnter timeout={1300}>
         <div>
           <Component/>
         </div>

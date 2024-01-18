@@ -6,23 +6,24 @@ import { faFilePdf, faEnvelope} from '@fortawesome/free-solid-svg-icons';
 import Slide from '@mui/material/Slide';
 
 
-import Button from '@mui/material/Button';
+// import Button from '@mui/material/Button';
 import emailjs from 'emailjs-com';
 
 emailjs.init("V68IFWSrLOb41io01");
 
-const socialButton = {
-    border: 'none',
-    margin: '1vh 1vw',
-    cursor: 'pointer',
-    borderRadius: '5px',
-    textTransform: 'none',
-    zIndex: '1',
-    '&:hover': {
-    },
-};
+// const socialbutton = {
+//     border: 'none',
+//     margin: '1vh 1vw',
+//     cursor: 'pointer',
+//     borderRadius: '5px',
+//     textTransform: 'none',
+//     textAline: 'center',
+//     zIndex: '-1',
+//     '&:hover': {
+//     },
+// };
 
-const emailButton = {
+const emailbutton = {
     border: 'none',
     cursor: 'pointer',
     borderRadius: '5px',
@@ -89,7 +90,7 @@ const ContactForm = () => {
             <h2>Contact Me</h2>
         </div>
         <div ref={targetRef}>
-            <Slide direction="up" in={isVisible} mountOnEnter timeout={1300}>
+            <Slide direction="down" in={isVisible} mountOnEnter timeout={1300}>
                 <div className='slide-container'>
                     
                     <div className="contact-container">
@@ -106,8 +107,8 @@ const ContactForm = () => {
 
                             <div className='contact-elements'>
                                 <label className="contact-spacing">Message:</label>
-                                <textarea name="message" required className="textarea" />
-                                <Button variant='contained' sx={emailButton} type="submit" className="email-button">Send Email</Button>
+                                <textarea name="message" required className="textarea" style={{ resize: "none" }}/>
+                                <button variant='contained' sx={emailbutton} type="submit" className="email-button">Send Email</button>
                             </div>
 
                             
@@ -115,30 +116,30 @@ const ContactForm = () => {
                     </div>
                     <div className='center-socials'>
                         <div className='contact-socials'>
-                            <Button variant='contained' sx={socialButton}>
+                            <button className='socials-style'>
                                 <FontAwesomeIcon icon={faLinkedin} style={iconStyle}/>Linkedin
-                            </Button>
-                            <Button variant='contained' sx={socialButton} >
+                            </button>
+                            <button className='socials-style' >
                                 <FontAwesomeIcon icon={faGithub} style={iconStyle}/>Github
-                            </Button>
-                            <Button variant='contained' sx={socialButton}>
+                            </button>
+                            <button className='socials-style'>
                                 <FontAwesomeIcon icon={faEnvelope} style={iconStyle}/>Email
-                            </Button>
-                            <Button variant='contained' sx={socialButton}>
+                            </button>
+                            <button className='socials-style'>
                                 <FontAwesomeIcon icon={faFilePdf} style={iconStyle}/>Resume
-                            </Button>
-                            <Button variant='contained' sx={socialButton}>
+                            </button>
+                            <button className='socials-style'>
                                 <FontAwesomeIcon icon={faFacebook} style={iconStyle}/>Facebook
-                            </Button>
-                            <Button variant='contained' sx={socialButton}>
+                            </button>
+                            <button className='socials-style'>
                                 <FontAwesomeIcon icon={faInstagram} style={iconStyle}/> Instagram
-                            </Button>
-                            <Button variant='contained' sx={socialButton}>
+                            </button>
+                            <button className='socials-style'>
                                 <FontAwesomeIcon icon={faTwitter} style={iconStyle}/> Twitter
-                            </Button>
-                            <Button variant='contained' sx={socialButton}>
+                            </button>
+                            <button className='socials-style'>
                                 <FontAwesomeIcon icon={faStrava} style={iconStyle}/> Strava
-                            </Button>
+                            </button>
                         </div>
                     </div>
                 </div>

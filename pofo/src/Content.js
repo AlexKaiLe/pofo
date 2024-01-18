@@ -102,7 +102,6 @@ const Content = () => {
             <Skills/>
             <Projects setIsHovered={setIsHovered}/>
             <Contact/>
-            {/* <div className="content-block-1"></div> */}
           </div>
           <div className="landscape" ref={scrollingDivRef}>
             <img className='content-block-2' src={san_fran} alt='san_fran'></img>
@@ -111,15 +110,6 @@ const Content = () => {
             <img className='content-block-2' src={san_fran} alt='san_fran'></img>
             <img className='content-block-2' src={san_fran} alt='san_fran'></img>
             <img className='content-block-2' src={san_fran} alt='san_fran'></img>
-            {/* <div className="content-block-2"></div>
-            <div className="content-block-2"></div>
-            <div className="content-block-2"></div>
-            <div className="content-block-2"></div>
-            <div className="content-block-2"></div>
-            <div className="content-block-2"></div>
-            <div className="content-block-2"></div>
-            <div className="content-block-2"></div>
-            <div className="content-block-2"></div> */}
           </div>
         </div>
       </div>

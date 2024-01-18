@@ -5,21 +5,27 @@ import Button from '@mui/material/Button';
 import ProjectsBanner from './ProjectsBanner'
 
 import RISD from './images/education/RISD.png'
+import Google from './images/projects/google.png'
+import melanoma from './images/projects/melanoma.png'
+import maestro from './images/projects/maestro.png'
 
 
 const buttonStyle = {
     margin: '2vh 2vw',
-    color: 'white',
+    width: '200px',
+    height: '200px',
     cursor: 'pointer',
     borderRadius: '10px',
     textTransform: 'none',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    justifyContent: 'flex-end',
+    justifyContent: 'space-evenly',
     transition: 'box-shadow 0.5s ease',
-
+    background: 'white',
+    color: 'black',
     '&:hover': {
+        background: 'lightgrey',
         transition: 'box-shadow 0.5s ease',
         boxShadow: '0 5px 10px rgba(0, 0, 0, 0.8)',
     },
@@ -61,26 +67,6 @@ const MelanomaComponent = () => {
         <div>
             <h2>Melanoma</h2>
             <div className="popup-body">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit... (Add more content as needed)</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit... (Add more content as needed)</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit... (Add more content as needed)</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit... (Add more content as needed)</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit... (Add more content as needed)</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit... (Add more content as needed)</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit... (Add more content as needed)</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit... (Add more content as needed)</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit... (Add more content as needed)</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit... (Add more content as needed)</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit... (Add more content as needed)</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit... (Add more content as needed)</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit... (Add more content as needed)</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit... (Add more content as needed)</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit... (Add more content as needed)</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit... (Add more content as needed)</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit... (Add more content as needed)</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit... (Add more content as needed)</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit... (Add more content as needed)</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit... (Add more content as needed)</p>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit... (Add more content as needed)</p>
             </div>
         </div>
@@ -144,10 +130,10 @@ const Projects = ({setIsHovered}) => {
             <div ref={targetRef}>
                 <Slide direction="down" in={isVisible} mountOnEnter timeout={2000}>
                     <div className='button-container'>
-                        <Button variant="contained" className='popup-button' sx={buttonStyle} onClick={toggleGoogle}><img src={RISD} alt='RISD'></img>Google Biodesign</Button>
-                        <Button variant="contained" className='popup-button' sx={buttonStyle} onClick={toggleMelanoma}><img src={RISD} alt='RISD'></img>Melanoma</Button>
-                        <Button variant="contained" className='popup-button' sx={buttonStyle} onClick={toggleMelanoma}><img src={RISD} alt='RISD'></img>Maestro</Button>
-                        <Button variant="contained" className='popup-button' sx={buttonStyle} onClick={toggleMelanoma}><img src={RISD} alt='RISD'></img>Yoki</Button>
+                        <Button variant="contained" className='popup-button' sx={buttonStyle} onClick={toggleGoogle}><img src={Google} alt='google'></img>Google Biodesign</Button>
+                        <Button variant="contained" className='popup-button' sx={buttonStyle} onClick={toggleMelanoma}><img src={melanoma} alt='melanoma'></img>Debiasing Melanoma</Button>
+                        <Button variant="contained" className='popup-button' sx={buttonStyle} onClick={toggleMelanoma}><img src={maestro} alt='maestro'></img>AI Maestro</Button>
+                        <Button variant="contained" className='popup-button' sx={buttonStyle} onClick={toggleMelanoma}><img src={RISD} alt='RISD'></img>Yoki Friends</Button>
                         <Button variant="contained" className='popup-button' sx={buttonStyle} onClick={toggleMelanoma}><img src={RISD} alt='RISD'></img>Harvard Neuroscience</Button>
                         <Button variant="contained" className='popup-button' sx={buttonStyle} onClick={toggleMelanoma}><img src={RISD} alt='RISD'></img>Genome Assembly</Button>
                         <Button variant="contained" className='popup-button' sx={buttonStyle} onClick={toggleMelanoma}><img src={RISD} alt='RISD'></img>Biomaterials</Button>
@@ -157,8 +143,7 @@ const Projects = ({setIsHovered}) => {
                     </div>
                 </Slide>
             </div>
-            <div>
-                <ProjectsBanner
+            <ProjectsBanner
                     Component={GoogleComponent}
                     isPopupOpen={isPopupGoogle}
                     togglePopup={toggleGoogle}
@@ -172,6 +157,21 @@ const Projects = ({setIsHovered}) => {
                     handleMouseEnter={handleMouseEnter}
                     handleMouseLeave={handleMouseLeave}
                 />
+            <div>
+                {/* <ProjectsBanner
+                    Component={GoogleComponent}
+                    isPopupOpen={isPopupGoogle}
+                    togglePopup={toggleGoogle}
+                    handleMouseEnter={handleMouseEnter}
+                    handleMouseLeave={handleMouseLeave}
+                /> */}
+                {/* <ProjectsBanner
+                    Component={MelanomaComponent}
+                    isPopupOpen={isPopupMelanoma}
+                    togglePopup={toggleMelanoma}
+                    handleMouseEnter={handleMouseEnter}
+                    handleMouseLeave={handleMouseLeave}
+                /> */}
             </div>
         </div>
     );

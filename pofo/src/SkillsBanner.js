@@ -34,14 +34,6 @@ const Skills = ({text, Component}) => {
                 <div className='skills-list'>
                     <h3>{text}</h3>
                     <Component></Component>
-                    {/* <div className='skills-box'>
-                        {data && data.map((item, index) => (
-                            <div className='skills' key={index}>
-                                <img className='skills-img' src={item.imageUrl} alt={`${index + 1}`} />
-                                <p>{item.description}</p>
-                            </div>
-                            ))}
-                    </div> */}
                 </div>
             </Slide>
         </div>
