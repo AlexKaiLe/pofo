@@ -1,15 +1,18 @@
 {
   "files": {
     "main.css": "/pofo/static/css/main.623910b6.css",
-    "main.js": "/pofo/static/js/main.b0f22ddf.js",
+    "main.js": "/pofo/static/js/main.725e32ab.js",
     "static/js/787.06cfae14.chunk.js": "/pofo/static/js/787.06cfae14.chunk.js",
     "static/media/profile_grad.jpg": "/pofo/static/media/profile_grad.b2025801aea4e0a0b5bd.jpg",
     "static/media/headshot.JPG": "/pofo/static/media/headshot.703655374eedd6ed13ae.JPG",
     "static/media/adobe.png": "/pofo/static/media/adobe.aed2e6a7f5a89f428644.png",
     "static/media/Brown_University.png": "/pofo/static/media/Brown_University.bc8f78e059dd33890cee.png",
+    "static/media/shoemaking.png": "/pofo/static/media/shoemaking.96c2a258984e92db0015.png",
+    "static/media/harvard.png": "/pofo/static/media/harvard.8f57837ed120eac4fafa.png",
     "static/media/haas.png": "/pofo/static/media/haas.35efa2f0f22ee2b3ca8a.png",
     "static/media/flask.png": "/pofo/static/media/flask.1dfb0a77f9428d1882eb.png",
     "static/media/brown.png": "/pofo/static/media/brown.1109480481c04c237dbf.png",
+    "static/media/genome.png": "/pofo/static/media/genome.50256de7d4e4ed196619.png",
     "static/media/React.png": "/pofo/static/media/React.81ed438b18e24116794d.png",
     "static/media/g-suite.png": "/pofo/static/media/g-suite.81c335ee57b59e429f76.png",
     "static/media/slack.png": "/pofo/static/media/slack.971333ce5a1cad197fb8.png",
@@ -20,12 +23,15 @@
     "static/media/JAX.png": "/pofo/static/media/JAX.ac0a02c100ca1307c421.png",
     "static/media/SQL.png": "/pofo/static/media/SQL.85fb38d6773862e917f4.png",
     "static/media/Alexander_Le_Resume.pdf": "/pofo/static/media/Alexander_Le_Resume.d2a4d6e65088c15d39d2.pdf",
+    "static/media/biomaterials.png": "/pofo/static/media/biomaterials.3ecf5d28ef68ecea37c5.png",
+    "static/media/yoki.png": "/pofo/static/media/yoki.fefe02e4964f5c34abc0.png",
     "static/media/CCMB.png": "/pofo/static/media/CCMB.8143409eba6d83c149c7.png",
     "static/media/autodesk.png": "/pofo/static/media/autodesk.ee50b5f3ec4ce6f0f5d5.png",
     "static/media/java.png": "/pofo/static/media/java.22daaf6346fa42cb6dfd.png",
     "static/media/MATLAB.png": "/pofo/static/media/MATLAB.2b608e94f8e1c2c9cd8e.png",
     "static/media/spacy.png": "/pofo/static/media/spacy.7b9f1f56759698b5ab68.png",
     "static/media/postgresql.png": "/pofo/static/media/postgresql.4a8c66c90ba3b5e27f7c.png",
+    "static/media/biodesign.png": "/pofo/static/media/biodesign.aaa87cf5634200b19162.png",
     "static/media/MongoDB.png": "/pofo/static/media/MongoDB.3a364684503a40b5fbb2.png",
     "static/media/amazon.png": "/pofo/static/media/amazon.615ec309bc9dd41be189.png",
     "static/media/R.png": "/pofo/static/media/R.fd47ae8706e150f2c6f1.png",
@@ -41,6 +47,7 @@
     "static/media/fulcrum.png": "/pofo/static/media/fulcrum.f80b73a9a1ec1a36c272.png",
     "static/media/CSS.png": "/pofo/static/media/CSS.8a182087615a3845ebac.png",
     "static/media/Pytorch.png": "/pofo/static/media/Pytorch.ced41d5ddd2fd1e5fa1a.png",
+    "static/media/lighting.png": "/pofo/static/media/lighting.f22af3fd06b6ffdd0652.png",
     "static/media/sqlite.png": "/pofo/static/media/sqlite.5864a661cb541182fdf3.png",
     "static/media/AWS.png": "/pofo/static/media/AWS.84d24e4e1708dc95aacf.png",
     "static/media/san_francisco.png": "/pofo/static/media/san_francisco.3a2b263d05b4986963a5.png",
@@ -84,11 +91,11 @@
     "static/media/Pointz.png": "/pofo/static/media/Pointz.a0f7e52f21fe8aa50188.png",
     "index.html": "/pofo/index.html",
     "main.623910b6.css.map": "/pofo/static/css/main.623910b6.css.map",
-    "main.b0f22ddf.js.map": "/pofo/static/js/main.b0f22ddf.js.map",
+    "main.725e32ab.js.map": "/pofo/static/js/main.725e32ab.js.map",
     "787.06cfae14.chunk.js.map": "/pofo/static/js/787.06cfae14.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.623910b6.css",
-    "static/js/main.b0f22ddf.js"
+    "static/js/main.725e32ab.js"
   ]
 }
