@@ -4,10 +4,16 @@ import Slide from '@mui/material/Slide';
 import Button from '@mui/material/Button';
 import ProjectsBanner from './ProjectsBanner'
 
-import RISD from './images/education/RISD.png'
 import Google from './images/projects/google.png'
 import melanoma from './images/projects/melanoma.png'
 import maestro from './images/projects/maestro.png'
+import yoki from './images/projects/yoki.png'
+import harvard from './images/projects/harvard.png'
+import genome from './images/projects/genome.png'
+import biomaterials from './images/projects/biomaterials.png'
+import shoemaking from './images/projects/shoemaking.png'
+import biodesign from './images/projects/biodesign.png'
+import lighting from './images/projects/lighting.png'
 
 
 const buttonStyle = {
@@ -133,13 +139,13 @@ const Projects = ({setIsHovered}) => {
                         <Button variant="contained" className='popup-button' sx={buttonStyle} onClick={toggleGoogle}><img src={Google} alt='google'></img>Google Biodesign</Button>
                         <Button variant="contained" className='popup-button' sx={buttonStyle} onClick={toggleMelanoma}><img src={melanoma} alt='melanoma'></img>Debiasing Melanoma</Button>
                         <Button variant="contained" className='popup-button' sx={buttonStyle} onClick={toggleMelanoma}><img src={maestro} alt='maestro'></img>AI Maestro</Button>
-                        <Button variant="contained" className='popup-button' sx={buttonStyle} onClick={toggleMelanoma}><img src={RISD} alt='RISD'></img>Yoki Friends</Button>
-                        <Button variant="contained" className='popup-button' sx={buttonStyle} onClick={toggleMelanoma}><img src={RISD} alt='RISD'></img>Harvard Neuroscience</Button>
-                        <Button variant="contained" className='popup-button' sx={buttonStyle} onClick={toggleMelanoma}><img src={RISD} alt='RISD'></img>Genome Assembly</Button>
-                        <Button variant="contained" className='popup-button' sx={buttonStyle} onClick={toggleMelanoma}><img src={RISD} alt='RISD'></img>Biomaterials</Button>
-                        <Button variant="contained" className='popup-button' sx={buttonStyle} onClick={toggleMelanoma}><img src={RISD} alt='RISD'></img>Shoe Making</Button>
-                        <Button variant="contained" className='popup-button' sx={buttonStyle} onClick={toggleMelanoma}><img src={RISD} alt='RISD'></img>NYC Biodesign</Button>
-                        <Button variant="contained" className='popup-button' sx={buttonStyle} onClick={toggleMelanoma}><img src={RISD} alt='RISD'></img>Lighting Design</Button>
+                        <Button variant="contained" className='popup-button' sx={buttonStyle} onClick={toggleMelanoma}><img src={yoki} alt='yoki'></img>Yoki Friends</Button>
+                        <Button variant="contained" className='popup-button' sx={buttonStyle} onClick={toggleMelanoma}><img src={harvard} alt='harvard'></img>Harvard Neuroscience</Button>
+                        <Button variant="contained" className='popup-button' sx={buttonStyle} onClick={toggleMelanoma}><img src={genome} alt='genome'></img>Genome Assembly</Button>
+                        <Button variant="contained" className='popup-button' sx={buttonStyle} onClick={toggleMelanoma}><img src={biomaterials} alt='biomaterials'></img>Biomaterials</Button>
+                        <Button variant="contained" className='popup-button' sx={buttonStyle} onClick={toggleMelanoma}><img src={shoemaking} alt='shoemaking'></img>Shoe Making</Button>
+                        <Button variant="contained" className='popup-button' sx={buttonStyle} onClick={toggleMelanoma}><img src={biodesign} alt='biodesign'></img>NYC Biodesign</Button>
+                        <Button variant="contained" className='popup-button' sx={buttonStyle} onClick={toggleMelanoma}><img src={lighting} alt='lighting'></img>Lighting Design</Button>
                     </div>
                 </Slide>
             </div>
