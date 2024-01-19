@@ -48,7 +48,7 @@
     border-radius: 5px;
     text-transform: none;
     text-align: center;
-    background: #048707;
+    background: #4e82b3;
     color: white;
     padding: 10px;
     display: flex;
@@ -57,7 +57,9 @@
 }
 
 .socials-style:hover{
-    background-color: #0a6b0a;
+    background-color: #80a8cd;
+    border-width: 100px;
+    color: black;
 }
 .contact-form {
     display: flex;
@@ -88,6 +90,7 @@
 
 .email-button {
     background-color: #048707;
+    border-radius: 5px;
     color: white;
     padding: 10px;
     border: none;

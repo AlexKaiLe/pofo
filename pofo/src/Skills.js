@@ -110,18 +110,19 @@ const prject_management = [
     { imageUrl: microsoft, description: 'microsoft' },
 ];
 
-const Component = ({data}) => {
-    return (<div className='skills-box'>
-        {data && data.map((item, index) => (
-            <div className='skills' key={index}>
-                <img className='skills-img' src={item.imageUrl} alt={`${index + 1}`} />
-                <p>{item.description}</p>
-            </div>
-            ))}
-    </div>);
-}
+
 
 const Skills = ({theme}) => {
+    const Component = ({data}) => {
+        return (<div className='skills-box' style={{backgroundColor: theme.palette.cards.main}}>
+            {data && data.map((item, index) => (
+                <div className='skills' key={index}>
+                    <img className='skills-img' src={item.imageUrl} alt={`${index + 1}`} />
+                    <p>{item.description}</p>
+                </div>
+                ))}
+        </div>);
+    }
 
     return(
         <div className='skills-content' style={{color: theme.palette.light_dark.main}}>
@@ -129,11 +130,9 @@ const Skills = ({theme}) => {
                 <h1>Skills</h1>
             </div>
             <div className='skills-banner'>
-                <SkillsBanner text="Programing Languages" Component={() => <Component data={programing_languages} />}/>
+                <SkillsBanner text="Programing Languages" Component={() => <Component data={programing_languages}/>} theme={theme}/>
                 <SkillsBanner text="Programing Packages" Component={() => <Component data={programing_packages} />}/>
                 <SkillsBanner text="Project Management & Design" Component={() => <Component data={prject_management} />}/>
-                {/* <SkillsBanner text="Programing Packages" data={programing_packages}/>
-                <SkillsBanner text="Project Management & Design" data={prject_management}/> */}
             </div>
         </div>
     );

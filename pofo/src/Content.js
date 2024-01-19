@@ -53,7 +53,7 @@ const randomIndex = Math.floor(randomValue * values.length);
 const images = values[randomIndex];
 
 const Content = ({theme}) => {
-  const [isHovered, setIsHovered] = useState(false);
+  const [isHovered, setIsHovered] = useState(true);
 
   const handleMouseEnter = () => {
     console.log("handleMouseEnter")
@@ -66,16 +66,10 @@ const Content = ({theme}) => {
 
   useEffect(() => {
     const handleScroll = (event) => {
-      // console.log(isHovered)
       if (isHovered) {
         const scrollSpeed = 2;
         const container = document.getElementById('scroll-container');
         container.scrollLeft += event.deltaY * scrollSpeed;
-        // if (event.touches != undefined) {
-        //   console.log("hi")
-        // }
-        // console.log(event.deltaY)
-        // container.scrollLeft += event.touches[0].clientY;
       }
     };
 
@@ -93,18 +87,6 @@ const Content = ({theme}) => {
       scrollingDivRef.current.scrollLeft += event.deltaX;
     }
   };
-
-  // const handleTouchMove = (event) => {
-  //   console.log(isHovered)
-  //   if (isHovered) {
-  //     const scrollSpeed = 2;
-  //     if (scrollingDivRef.current) {
-  //       scrollingDivRef.current.scrollTop += event.touches[0].clientY * scrollSpeed;
-  //       scrollingDivRef.current.scrollLeft += event.touches[0].clientX * scrollSpeed;
-  //     }
-  //   }
-  // };
-
 
   return (
     <div 

@@ -11,37 +11,13 @@ import emailjs from 'emailjs-com';
 
 emailjs.init("V68IFWSrLOb41io01");
 
-// const socialbutton = {
-//     border: 'none',
-//     margin: '1vh 1vw',
-//     cursor: 'pointer',
-//     borderRadius: '5px',
-//     textTransform: 'none',
-//     textAline: 'center',
-//     zIndex: '-1',
-//     '&:hover': {
-//     },
-// };
-
-const emailbutton = {
-    border: 'none',
-    cursor: 'pointer',
-    borderRadius: '5px',
-    textTransform: 'none',
-    backgroundColor: '#4CAF50',
-    margin: '2vh 0 0 0',
-    zIndex: '1',
-    '&:hover': {
-        backgroundColor: '#048707'
-    },
-};
-
 const iconStyle = {
 fontSize: '1.5rem', // Adjust the icon size
 marginRight: '0.5rem', // Add spacing between icon and text
 };
 
 const ContactForm = ({theme}) => {
+
     const [isVisible, setIsVisible] = useState(false);
     const targetRef = useRef(null);
 
@@ -108,7 +84,7 @@ const ContactForm = ({theme}) => {
                             <div className='contact-elements'>
                                 <label className="contact-spacing">Message:</label>
                                 <textarea name="message" required className="textarea" style={{ resize: "none" }}/>
-                                <button variant='contained' sx={emailbutton} type="submit" className="email-button">Send Email</button>
+                                <button variant='contained' type="submit" className="email-button">Send Email</button>
                             </div>
 
                             

@@ -3,7 +3,7 @@ import './App.css';
 import Navbar from './Navbar';
 import Content from './Content';
 
-import { ThemeProvider, createTheme } from '@mui/material/styles';
+import { createTheme } from '@mui/material/styles';
 
 
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -25,13 +25,25 @@ function App() {
     palette: {
       mode: darkMode ? 'dark' : 'light',
       navbar: {
-        main: darkMode ? '#333333' : '#d3d3d3', 
+        main: darkMode ? '#323336' : '#80a8cd', 
       },
       navbar_buttons: {
-        main: darkMode ? '#d3d3d3' : '#333333', 
+        main: darkMode ? '#494b57' : '#4e82b3', 
+      },
+      navbar_buttons_hover: {
+        main: darkMode ? '#717589' : '#c9e5ff', 
+      },
+      cards:{
+        main: darkMode ? '#717589' : '#ffffff', 
       },
       content: {
-        main: darkMode ? '#333333' : '#d3d3d3', 
+        main: darkMode ? '#494b57' : '#c9e5ff', 
+      },
+      content_buttons: {
+        main: darkMode ? '#323336' : '#4e82b3', 
+      },
+      content_buttons_hover: {
+        main: darkMode ? '#494b57' : '#80a8cd', 
       },
       dark_light: {
         main: darkMode ? '#000000' : '#ffffff', 
@@ -39,6 +51,9 @@ function App() {
       light_dark: {
         main: darkMode ? '#ffffff' : '#000000',
       },
+      blue_text: {
+        main: darkMode ? '#63b9ff' : '#376b96',
+      }
     },
     background: {
       default: darkMode ? '#303030' : '#fafafa',

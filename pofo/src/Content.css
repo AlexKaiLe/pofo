@@ -7,19 +7,20 @@
   background-color: #efe7da;
 }
 
-/* .scroll-container {
-  display: flex;
-  overflow: hidden;
-  flex: 1;
-} */
-
 .scroll-container {
   display: flex;
-  overflow: auto; /* Updated to enable horizontal scrolling */
-  flex: 1; /* Take remaining space */
-  overflow-x: auto; /* Added for horizontal scrolling */
-  -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
+  overflow-x: auto;
+  flex: 1;
+  -webkit-overflow-scrolling: touch; 
 }
+
+/* .scroll-container {
+  display: flex;
+  overflow: auto; 
+  flex: 1; 
+  overflow-x: auto; 
+  -webkit-overflow-scrolling: touch; 
+} */
 
 .container {
   display: flex;
@@ -53,7 +54,6 @@
 .content-block-2 {
   width: auto;
   height: 20vh;
-  background-color: forestgreen;
 }
 
 .runner-container {

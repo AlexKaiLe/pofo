@@ -36,10 +36,10 @@ const Welcome = ({theme}) => {
 
   return (
     <div className="shape" ref={targetRef}>
-      <div id='WELCOME_PAGE' className='Welcome-Page' style={{color: theme.palette.light_dark.main}}>
-          <h1 >Welcome</h1>
-      </div>
-      <Slide direction="down" in={isVisible} mountOnEnter unmountOnExit timeout={2000}>
+        <div id='WELCOME_PAGE' className='Welcome-Page' style={{color: theme.palette.light_dark.main}}>
+            <h1 >Welcome</h1>
+        </div>
+      <Slide direction="down" in={isVisible} mountOnEnter unmountOnExit timeout={1000}>
         <div className="welcome-wrapper" style={{color: theme.palette.light_dark.main}}>
           <div className="welcome-body">
             <div className="text-box">
@@ -57,16 +57,16 @@ const Welcome = ({theme}) => {
           </div>
           <div className="education-imgs">
             <div className='education-box'>
-              <img className="education" src={brown} alt="brown"></img>
+              <img className="education" style={{backgroundColor: theme.palette.cards.main}} src={brown} alt="brown"></img>
               <p>Brown University</p>
             </div>
             <div className='education-box'>
-              <img className="education" src={RISD} alt="RISD"></img>
+              <img className="education" style={{backgroundColor: theme.palette.cards.main}} src={RISD} alt="RISD"></img>
               <p>Rhode Island</p>
               <p>School of Design</p>
             </div>
             <div className='education-box'>
-              <img className="education" src={haas} alt="haas"></img>
+              <img className="education" style={{backgroundColor: theme.palette.cards.main}} src={haas} alt="haas"></img>
               <p>UC Berkley Haas</p>
               <p>School of Business</p>
             </div>
