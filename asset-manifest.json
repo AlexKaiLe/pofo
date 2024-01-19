@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/pofo/static/css/main.ecdbf8fc.css",
-    "main.js": "/pofo/static/js/main.52d5eb2c.js",
+    "main.css": "/pofo/static/css/main.a1c63ed3.css",
+    "main.js": "/pofo/static/js/main.ca518054.js",
     "static/js/787.06cfae14.chunk.js": "/pofo/static/js/787.06cfae14.chunk.js",
     "static/media/profile_grad.jpg": "/pofo/static/media/profile_grad.b2025801aea4e0a0b5bd.jpg",
     "static/media/headshot.JPG": "/pofo/static/media/headshot.703655374eedd6ed13ae.JPG",
@@ -9,8 +9,8 @@
     "static/media/Brown_University.png": "/pofo/static/media/Brown_University.bc8f78e059dd33890cee.png",
     "static/media/shoemaking.png": "/pofo/static/media/shoemaking.96c2a258984e92db0015.png",
     "static/media/harvard.png": "/pofo/static/media/harvard.8f57837ed120eac4fafa.png",
-    "static/media/haas.png": "/pofo/static/media/haas.35efa2f0f22ee2b3ca8a.png",
     "static/media/flask.png": "/pofo/static/media/flask.1dfb0a77f9428d1882eb.png",
+    "static/media/haas.png": "/pofo/static/media/haas.44a139b1039d8eddd322.png",
     "static/media/brown.png": "/pofo/static/media/brown.1109480481c04c237dbf.png",
     "static/media/genome.png": "/pofo/static/media/genome.50256de7d4e4ed196619.png",
     "static/media/React.png": "/pofo/static/media/React.81ed438b18e24116794d.png",
@@ -90,12 +90,12 @@
     "static/media/Keras.png": "/pofo/static/media/Keras.50b636f01e50d9f2d513.png",
     "static/media/Pointz.png": "/pofo/static/media/Pointz.a0f7e52f21fe8aa50188.png",
     "index.html": "/pofo/index.html",
-    "main.ecdbf8fc.css.map": "/pofo/static/css/main.ecdbf8fc.css.map",
-    "main.52d5eb2c.js.map": "/pofo/static/js/main.52d5eb2c.js.map",
+    "main.a1c63ed3.css.map": "/pofo/static/css/main.a1c63ed3.css.map",
+    "main.ca518054.js.map": "/pofo/static/js/main.ca518054.js.map",
     "787.06cfae14.chunk.js.map": "/pofo/static/js/787.06cfae14.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ecdbf8fc.css",
-    "static/js/main.52d5eb2c.js"
+    "static/css/main.a1c63ed3.css",
+    "static/js/main.ca518054.js"
   ]
 }
