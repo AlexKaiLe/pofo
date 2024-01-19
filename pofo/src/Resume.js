@@ -270,11 +270,11 @@ const ResumeComponent = () => {
     );
 }
 
-const Resume = () =>{
+const Resume = ({theme}) =>{
 
     return(
         <div className='resume-content'>
-            <div id='RESUME_PAGE' className='Resume-Page'>
+            <div id='RESUME_PAGE' className='Resume-Page' style={{color: theme.palette.light_dark.main}}>
                 <h1>Resume</h1>
             </div>
             <div className='resume-center'>

@@ -18,8 +18,8 @@ import lighting from './images/projects/lighting.png'
 
 const buttonStyle = {
     margin: '2vh 2vw',
-    width: '200px',
-    height: '200px',
+    width: '175px',
+    height: '175px',
     cursor: 'pointer',
     borderRadius: '10px',
     textTransform: 'none',
@@ -79,7 +79,7 @@ const MelanomaComponent = () => {
     );
 };
 
-const Projects = ({setIsHovered}) => {
+const Projects = ({setIsHovered, theme}) => {
     const targetRef = useRef(null);
     const [isVisible, setIsVisible] = useState(false);
     const [isPopupGoogle, setPopupGoogle] = useState(false);
@@ -130,7 +130,7 @@ const Projects = ({setIsHovered}) => {
 
     return (
         <div className='projects-content'>
-            <div id='PROJECTS_PAGE' className='projects-page'>
+            <div id='PROJECTS_PAGE' className='projects-page' style={{color: theme.palette.light_dark.main}}>
                 <h1>Projects</h1>
             </div>
             <div ref={targetRef}>

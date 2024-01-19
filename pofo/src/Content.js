@@ -52,7 +52,7 @@ const randomIndex = Math.floor(randomValue * values.length);
 // Use the randomly chosen index to get the selected value
 const images = values[randomIndex];
 
-const Content = () => {
+const Content = ({theme}) => {
   const [isHovered, setIsHovered] = useState(false);
 
   const handleMouseEnter = () => {
@@ -66,10 +66,16 @@ const Content = () => {
 
   useEffect(() => {
     const handleScroll = (event) => {
+      // console.log(isHovered)
       if (isHovered) {
         const scrollSpeed = 2;
         const container = document.getElementById('scroll-container');
         container.scrollLeft += event.deltaY * scrollSpeed;
+        // if (event.touches != undefined) {
+        //   console.log("hi")
+        // }
+        // console.log(event.deltaY)
+        // container.scrollLeft += event.touches[0].clientY;
       }
     };
 
@@ -88,20 +94,38 @@ const Content = () => {
     }
   };
 
+  // const handleTouchMove = (event) => {
+  //   console.log(isHovered)
+  //   if (isHovered) {
+  //     const scrollSpeed = 2;
+  //     if (scrollingDivRef.current) {
+  //       scrollingDivRef.current.scrollTop += event.touches[0].clientY * scrollSpeed;
+  //       scrollingDivRef.current.scrollLeft += event.touches[0].clientX * scrollSpeed;
+  //     }
+  //   }
+  // };
+
 
   return (
-    <div id='content-container' className='content-container' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+    <div 
+      id='content-container' 
+      className='content-container' 
+      onMouseEnter={handleMouseEnter} 
+      onMouseLeave={handleMouseLeave} 
+      onTouchStart={handleMouseEnter}
+      onTouchEnd={handleMouseLeave}
+      style={{backgroundColor: theme.palette.content.main}}>
       <div id="scroll-container" className="scroll-container">
         <div className="container">
            <div className="runner-container" onWheel={handleWheel}>
             <Runner className="runner" images={images} isHovered={isHovered} handleWheel={handleWheel}/>
           </div>
           <div className="content">
-            <Welcome/>
-            <Resume/>
-            <Skills/>
-            <Projects setIsHovered={setIsHovered}/>
-            <Contact/>
+            <Welcome theme={theme}/>
+            <Resume theme={theme}/>
+            <Skills theme={theme}/>
+            <Projects setIsHovered={setIsHovered} theme={theme}/>
+            <Contact theme={theme}/>
           </div>
           <div className="landscape" ref={scrollingDivRef}>
             <img className='content-block-2' src={san_fran} alt='san_fran'></img>

@@ -27,55 +27,53 @@ const toggleStyle = {
     cursor: 'pointer'
   };
 
-const VerticalNavbar = ({darkMode, setDarkMode, handleThemeChange}) => {
+const VerticalNavbar = ({darkMode, handleThemeChange, theme}) => {
     return (
         <Slide direction="right" in={true} mountOnEnter unmountOnExit timeout={1000}>
-            <div className="vertical-navbar">
-                <div className="profile-container">
+            <div className="vertical-navbar" style={{backgroundColor: theme.palette.navbar.main}}>
+                <div className="profile-container" >
                     <img className="profile-image" src={profileImg} alt="Contact 1" />
-                    <h1>Alexander K. Le</h1>
+                    <h1 style={{color: theme.palette.light_dark.main}}>Alexander K. Le</h1>
                     <div className="contact-buttons">
-                        <a href="https://www.linkedin.com/in/alexkaile/" className="btn btn-outline-light">
+                        <a href="https://www.linkedin.com/in/alexkaile/" className="btn btn-outline-light" style={{color: theme.palette.light_dark.main, borderColor: theme.palette.light_dark.main}}> 
                                 <FontAwesomeIcon icon={['fab', 'linkedin']} className='fa-icon'/>
                         </a>
-                        <a href="https://github.com/AlexKaiLe" className="btn btn-outline-light">
+                        <a href="https://github.com/AlexKaiLe" className="btn btn-outline-light" style={{color: theme.palette.light_dark.main, borderColor: theme.palette.light_dark.main}}>
                                 <FontAwesomeIcon icon={['fab', 'github']} className='fa-icon'/>
                         </a>
-                        <a href="mailto:alexkaile@gmail.com" className="btn btn-outline-light">
+                        <a href="mailto:alexkaile@gmail.com" className="btn btn-outline-light" style={{color: theme.palette.light_dark.main, borderColor: theme.palette.light_dark.main}}>
                                 <FontAwesomeIcon icon="envelope" className='fa-icon'/>
                         </a>
-                        <a href={Resume} download="Alexander_Le_Resume.pdf" className="btn btn-outline-light">
+                        <a href={Resume} download="Alexander_Le_Resume.pdf" className="btn btn-outline-light" style={{color: theme.palette.light_dark.main, borderColor: theme.palette.light_dark.main}}>
                                 <FontAwesomeIcon icon={faFilePdf} className='fa-icon'/>
                         </a>
                     </div>
                 </div>
                 <div className='nav-btn-container'>
-                    <Button variant="contained" sx={buttonStyle} href='#WELCOME_PAGE'>
+                    <Button variant="contained" sx={buttonStyle} style={{color: theme.palette.dark_light.main, backgroundColor: theme.palette.navbar_buttons.main}} href='#WELCOME_PAGE'>
                         Welcome
                     </Button>
-                    <Button variant="contained" sx={buttonStyle} href='#RESUME_PAGE'>
+                    <Button variant="contained" sx={buttonStyle} style={{color: theme.palette.dark_light.main, backgroundColor: theme.palette.navbar_buttons.main}} href='#RESUME_PAGE'>
                         Resume
                     </Button>
-                    <Button variant="contained" sx={buttonStyle} href='#SKILLS_PAGE'>
+                    <Button variant="contained" sx={buttonStyle} style={{color: theme.palette.dark_light.main, backgroundColor: theme.palette.navbar_buttons.main}} href='#SKILLS_PAGE'>
                         Skills
                     </Button>
-                    <Button variant="contained" sx={buttonStyle} href='#PROJECTS_PAGE'>
+                    <Button variant="contained" sx={buttonStyle} style={{color: theme.palette.dark_light.main, backgroundColor: theme.palette.navbar_buttons.main}} href='#PROJECTS_PAGE'>
                         Projects
                     </Button>
                     {/* <Button variant="contained" sx={buttonStyle}>
                         Alex GPT
                     </Button> */}
-                    <Button variant="contained" sx={buttonStyle} href='#CONTACT_PAGE'>
+                    <Button variant="contained" sx={buttonStyle} style={{color: theme.palette.dark_light.main, backgroundColor: theme.palette.navbar_buttons.main}} href='#CONTACT_PAGE'>
                         Contact
                     </Button>
                 </div>
                 
                 <div className="light-dark-mode">
-                    <Typography variant="body1">
-                        {darkMode ? 'Dark Mode' : 'Light Mode'}
+                    <Typography variant="body1" style={{color: theme.palette.light_dark.main}}>
+                        {darkMode ? 'Light Mode' : 'Dark Mode'}
                     </Typography>
-                    {/* <p>Light/Dark Mode</p> */}
-                    {/* <Switch sx={toggleStyle} defaultChecked /> */}
                     <Switch
                         checked={darkMode}
                         onChange={handleThemeChange}

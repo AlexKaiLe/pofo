@@ -7,7 +7,7 @@ import haas from './images/education/haas.png'
 import RISD from './images/education/RISD.png'
 
 
-const Welcome = ({id}) => {
+const Welcome = ({theme}) => {
   const [isVisible, setIsVisible] = useState(false);
   const targetRef = useRef(null);
 
@@ -36,11 +36,11 @@ const Welcome = ({id}) => {
 
   return (
     <div className="shape" ref={targetRef}>
-      <div id='WELCOME_PAGE' className='Welcome-Page'>
-          <h1>Welcome</h1>
+      <div id='WELCOME_PAGE' className='Welcome-Page' style={{color: theme.palette.light_dark.main}}>
+          <h1 >Welcome</h1>
       </div>
       <Slide direction="down" in={isVisible} mountOnEnter unmountOnExit timeout={2000}>
-        <div className="welcome-wrapper">
+        <div className="welcome-wrapper" style={{color: theme.palette.light_dark.main}}>
           <div className="welcome-body">
             <div className="text-box">
               <div>

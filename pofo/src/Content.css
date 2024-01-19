@@ -4,12 +4,21 @@
   height: 100vh;
   width: 100%; 
   overflow: auto;
+  background-color: #efe7da;
 }
+
+/* .scroll-container {
+  display: flex;
+  overflow: hidden;
+  flex: 1;
+} */
 
 .scroll-container {
   display: flex;
-  overflow: hidden;
+  overflow: auto; /* Updated to enable horizontal scrolling */
   flex: 1; /* Take remaining space */
+  overflow-x: auto; /* Added for horizontal scrolling */
+  -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
 }
 
 .container {
@@ -44,7 +53,7 @@
 .content-block-2 {
   width: auto;
   height: 20vh;
-  /* background-color: forestgreen; */
+  background-color: forestgreen;
 }
 
 .runner-container {

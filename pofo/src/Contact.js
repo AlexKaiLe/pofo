@@ -41,7 +41,7 @@ fontSize: '1.5rem', // Adjust the icon size
 marginRight: '0.5rem', // Add spacing between icon and text
 };
 
-const ContactForm = () => {
+const ContactForm = ({theme}) => {
     const [isVisible, setIsVisible] = useState(false);
     const targetRef = useRef(null);
 
@@ -85,7 +85,7 @@ const ContactForm = () => {
   
 
   return (
-    <div className='contact-content'>
+    <div className='contact-content' style={{color: theme.palette.light_dark.main}}>
         <div id='CONTACT_PAGE' className='contact-page'>
             <h2>Contact Me</h2>
         </div>

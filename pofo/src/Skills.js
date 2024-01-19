@@ -121,11 +121,11 @@ const Component = ({data}) => {
     </div>);
 }
 
-const Skills = () => {
+const Skills = ({theme}) => {
 
     return(
-        <div className='skills-content'>
-            <div id='SKILLS_PAGE' className='skills-page'>
+        <div className='skills-content' style={{color: theme.palette.light_dark.main}}>
+            <div id='SKILLS_PAGE' className='skills-page' >
                 <h1>Skills</h1>
             </div>
             <div className='skills-banner'>
