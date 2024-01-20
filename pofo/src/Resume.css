@@ -74,7 +74,7 @@
 }
 
 .resume-center{
-  height: 60vh;
+  height: calc(60vh - 10px);
   display: flex;
   align-items: center;
 }
@@ -124,8 +124,8 @@
     width: 500px;
   }
   .banner-container {
-    width: 700px;
-    height: 150px;
+    width: 750px;
+    height: 125px;
     flex-direction: column;
   }
 
@@ -133,7 +133,8 @@
     height: 150px;
   }
   .banner {
-    height: 150px;
+    height: 125px;
+    width: 750px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -142,10 +143,6 @@
   .banner ul {
     margin-top: auto;
     margin-bottom: auto;
-  }
-
-  .description {
-    /* margin-left: 2vw; */
   }
 
 }

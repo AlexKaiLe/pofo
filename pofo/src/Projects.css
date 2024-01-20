@@ -110,7 +110,7 @@
   justify-content: right;
 }
 
-@media screen and (max-height: 780px){
+@media screen and (max-height: 675px){
 
   .projects-content{
     width: 3000px;

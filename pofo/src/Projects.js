@@ -138,7 +138,7 @@ const Projects = ({setIsHovered, theme}) => {
                     <div className='button-container'>
                         <Button variant="contained" className='popup-button' sx={buttonStyle} onClick={toggleGoogle} style={{color: theme.palette.light_dark.main}}>
                             <img src={Google} alt='google'></img>
-                            <p>Google Biodesign</p>
+                            Google Biodesign
                         </Button>
                         <Button variant="contained" className='popup-button' sx={buttonStyle} onClick={toggleMelanoma} style={{color: theme.palette.light_dark.main}}>
                             <img src={melanoma} alt='melanoma'></img>
@@ -154,7 +154,7 @@ const Projects = ({setIsHovered, theme}) => {
                         </Button>
                         <Button variant="contained" className='popup-button' sx={buttonStyle} onClick={toggleMelanoma} style={{color: theme.palette.light_dark.main}}>
                             <img src={harvard} alt='harvard'></img>
-                            Harvard Neuroscience
+                            NSF Neuroscience
                         </Button>
                         <Button variant="contained" className='popup-button' sx={buttonStyle} onClick={toggleMelanoma} style={{color: theme.palette.light_dark.main}}>
                             <img src={genome} alt='genome'></img>

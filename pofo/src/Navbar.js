@@ -4,12 +4,18 @@ import profileImg from './images/education/profile_grad.jpg';
 import Resume from './images/resume/Alexander_Le_Resume.pdf';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFilePdf } from '@fortawesome/free-solid-svg-icons';
-import { Button, Slide, CssBaseline, Switch, Container, Typography, Paper } from '@mui/material';
+import { Button, Slide, Switch, Typography } from '@mui/material';
 
 const toggleStyle = {
     margin: '5px',
-    cursor: 'pointer'
-  };
+    cursor: 'pointer', 
+    '& .MuiSwitch-thumb': {
+        backgroundColor: '#c9e5ff',
+    },
+    '& .MuiSwitch-track': {
+        backgroundColor: '#4e82b3',
+    },
+};
 
 const VerticalNavbar = ({darkMode, handleThemeChange, theme}) => {
     const buttonStyle = {
@@ -78,7 +84,7 @@ const VerticalNavbar = ({darkMode, handleThemeChange, theme}) => {
                     <Switch
                         checked={darkMode}
                         onChange={handleThemeChange}
-                        color="primary"
+                        // color="primary"
                         name="themeSwitch"
                         sx={toggleStyle}
                     />
